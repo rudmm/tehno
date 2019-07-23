@@ -88,11 +88,15 @@ header{
         &-slider{
             position: relative;
             height: 100vh;
-            img{
+
+            &-img{
                 float: right;
                 max-height: 100vh;
                 opacity: .7;
                 position: absolute;
+                right: 100%;
+            }
+            &-head{
                 right: 0;
             }
             &-buttons{

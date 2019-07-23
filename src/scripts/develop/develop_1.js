@@ -1,4 +1,4 @@
-
+let btnLf = $('.btnLf');
 $(document).ready(function(){
      
 });
