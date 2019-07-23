@@ -1,0 +1,16 @@
+@media screen and (max-width: 1366px) {
+  .menu {
+    height: 768px; }
+    .menu-logo svg {
+      width: 100px;
+      height: 17px; }
+    .menu-logo-list-item {
+      margin-left: 20px; }
+      .menu-logo-list-item a {
+        font-size: 14px;
+        line-height: 16px; }
+    .menu-contacts-tel {
+      font-size: 11px;
+      line-height: 18px; } }
+
+/*# sourceMappingURL=dev_1_adapt.css.map */

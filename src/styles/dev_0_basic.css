@@ -1,0 +1,148 @@
+/* base styles*/
+*, *:before, *:after {
+  box-sizing: border-box;
+  outline: none; }
+
+*, body, html {
+  -webkit-text-size-adjust: none;
+  -webkit-appearance: none; }
+
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  width: 100%;
+  min-width: 320px;
+  font-family: 'Futura PT';
+  background: #fff;
+  color: #3d3d3d;
+  position: relative;
+  font-size: 16px;
+  line-height: 1; }
+
+img {
+  vertical-align: bottom;
+  border: 0;
+  max-width: 100%; }
+
+/* helping adds*/
+.clear {
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 0;
+  overflow: hidden; }
+
+.cfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 1px;
+  line-height: 1px;
+  overflow: hidden;
+  clear: both; }
+
+.hidden-block {
+  position: absolute;
+  left: -99999em;
+  top: -99999em; }
+
+/* /helping adds*/
+/* wraps styling*/
+.mbox {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; }
+
+.mbox:after {
+  content: "";
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 0;
+  overflow: hidden;
+  display: block; }
+
+/* /wraps styling*/
+.footer_placeholder {
+  height: 200px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #212121; }
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #212121;
+  opacity: 1; }
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #212121;
+  opacity: 1; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #212121; }
+
+/*fonts*/
+@font-face {
+  font-family: "Futura PT";
+  src: url("/fonts/FuturaPTBook.eot");
+  src: url("/fonts/FuturaPTBook.eot?#iefix") format("embedded-opentype"), url("/fonts/FuturaPTBook.woff") format("woff"), url("/fonts/FuturaPTBook.ttf") format("truetype"), url("/fonts/FuturaPTBook.svg#Futura PT") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Futura PT";
+  src: url("/fonts/FuturaPTMedium.eot");
+  src: url("/fonts/FuturaPTMedium.eot?#iefix") format("embedded-opentype"), url("/fonts/FuturaPTMedium.woff") format("woff"), url("/fonts/FuturaPTMedium.ttf") format("truetype"), url("/fonts/FuturaPTMedium.svg#Futura PT") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Futura PT";
+  src: url("/fonts/FuturaPTExtraBold.eot");
+  src: url("/fonts/FuturaPTExtraBold.eot?#iefix") format("embedded-opentype"), url("/fonts/FuturaPTExtraBold.woff") format("woff"), url("/fonts/FuturaPTExtraBold.ttf") format("truetype"), url("/fonts/FuturaPTExtraBold.svg#Futura PT") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+/*/fonts*/
+/* /base styles */
+/* ctext */
+.ctext h1, .ctext h2, .ctext h3, .ctext h4, .ctext h5, .ctext h6 {
+  line-height: 1.25;
+  margin-bottom: 15px;
+  font-weight: 700; }
+.ctext h1 {
+  font-size: 36px; }
+.ctext h2 {
+  font-size: 32px; }
+.ctext h3 {
+  font-size: 28px; }
+.ctext h4 {
+  font-size: 24px; }
+.ctext h5 {
+  font-size: 20px; }
+.ctext h6 {
+  font-size: 16px; }
+.ctext p {
+  margin-bottom: 10px;
+  font-size: 14px; }
+
+/* /ctext */
+/* styles for wp-admin panel */
+body.customize-support .wp-panel-show {
+  top: 32px; }
+
+@media screen and (max-width: 782px) {
+  body.customize-support .wp-panel-show {
+    top: 46px; }
+
+  #wpadminbar {
+    position: fixed !important; } }
+/* /styles for wp-admin panel */
+/*End Layout*/
+
+/*# sourceMappingURL=dev_0_basic.css.map */
