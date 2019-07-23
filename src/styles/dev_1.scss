@@ -86,10 +86,30 @@ header{
         left: 0;
         margin:0;
         &-slider{
+            position: relative;
+            height: 100vh;
             img{
                 float: right;
                 max-height: 100vh;
                 opacity: .7;
+                position: absolute;
+                right: 0;
+            }
+            &-buttons{
+                position: absolute;
+                bottom: 30px;
+                right: 110px;
+                width: 1550px;
+                &-btn{
+                    background: #BFBBBA;
+                    opacity: 0.5;
+                    width: 50px;
+                    height: 50px;
+                    padding: 0;
+                    border: none;
+                    margin-left: 10px;
+                    float: right;
+                }
             }
         }
         &-menu{
@@ -111,6 +131,11 @@ header{
                 margin: 0;
                 margin-bottom: 20px;
             }
+
+                &-circles{
+                    position: absolute;
+                    bottom: 0px;
+                }
             p{
                 margin: 0;
                 font-size: 18px;
