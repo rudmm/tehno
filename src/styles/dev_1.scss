@@ -85,35 +85,33 @@ header{
         top: 0px;
         left: 0;
         margin:0;
-        &-slider{
-            position: relative;
+        &-slider-slick{
             height: 100vh;
+            margin-left: 25%;
+            img{
+                height: 100vh;
+                max-width: 1800px;
+                opacity:0.8;
+                -moz-opacity:0.8;
+                filter: alpha(opacity=80) black;
 
-            &-img{
-                float: right;
-                max-height: 100vh;
-                opacity: .7;
-                position: absolute;
-                right: 100%;
             }
-            &-head{
-                right: 0;
+            .slick-prev {
+              right: 170px;
+              left: auto;
             }
-            &-buttons{
-                position: absolute;
-                bottom: 30px;
-                right: 110px;
-                width: 1550px;
-                &-btn{
-                    background: #BFBBBA;
-                    opacity: 0.5;
-                    width: 50px;
-                    height: 50px;
-                    padding: 0;
-                    border: none;
-                    margin-left: 10px;
-                    float: right;
-                }
+            .slick-next {
+              right: 110px;
+            }
+            .slick-prev, .slick-next{
+              opacity: 0.5;
+              z-index: 100;
+              width: 50px;
+              height: 50px;
+              background: #BFBBBA;
+              position: absolute;
+              bottom: 0;
+              margin-top: 433px;
             }
         }
         &-menu{
@@ -125,6 +123,7 @@ header{
             background: $colorOrange;
             padding-left: 50px;
             padding-top: 170px;
+            opacity: 1;
             &-block{
                 position: relative;
                 h2{
@@ -156,6 +155,26 @@ header{
                 transition: opacity .5s;
             }
             
+            .slick-dots{
+                z-index: 1000;
+                text-align: left;
+                width: auto;
+                li{
+                    button{
+                       border-radius: 50%; 
+                       background: #FFFFFF;
+                       width: 10px;
+                       height: 10px;
+                       opacity: 0.5;
+                    }
+                
+                }
+                .slick-active{
+                    button{
+                        opacity: 1;
+                    }
+                }
+            }
             }
             &-block:hover .topsection-menu-block-line{
                     opacity: 1;
