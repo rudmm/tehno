@@ -1,11 +1,41 @@
 @media screen and (max-width: 1920px){
+	.header{
+		.menu{
+			&-contacts{
+				top: 430px;
+			}
+			&-services{
+				height: 100vh;
+			}
+		}
+	}
+
+	/*begin topsection*/
+
+	.topsection{
+		&-slider-slick{
+			height: 100vh;
+		}
+		&-menu{
+			height: 1200px;
+			p{
+				margin-bottom: 70px;
+			}
+			.slick-dots{
+				bottom: -20px;
+			}
+		}
+		&-form{
+			top: 300px;
+		}
+	}
 
 }
 @media screen and (max-width: 1600px){
 
 }
 @media screen and (max-width: 1366px){
-header{
+.header{
 	.menu{
 		height: 768px;
 		&-logo{

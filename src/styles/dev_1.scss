@@ -1,19 +1,19 @@
 $colorWhite: #fff;
 $colorOrange: #FEBA03;
 $colorRed: #E04A38;
-
+$colorBlack: #000;
 /*begin header*/
 
 .header{
 	display: inline;
 	.menu{
-	width: 10%;
+	width: 200px;
 	height: 100vh;
 	background: #1C0B05;
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 9;
     &-logo{
     	width: 100%;
     	text-align: center;
@@ -24,23 +24,32 @@ $colorRed: #E04A38;
     	list-style-type: none;
     	padding: 0;
     	margin:0;
+        &-item:nth-of-type(1){
+            padding-top: 0;
+        }
     	&-item{
-    		margin-left: 40px;
-    		margin-bottom: 40px;
+    		padding-left: 40px;
+    		padding-bottom: 20px;
+            padding-top: 20px;
     		a{
     			font-size: 20px;
-                line-height: 38px;
                 color: $colorWhite;
                 text-decoration: none;
                 &:hover{
                 	color: $colorOrange;
-                };
+                   svg path{
+                    fill: $colorOrange;
+                   }
+                }
     		}
+            &-open{
+                background-color: $colorOrange;
+            }
     	}
     }
     &-contacts{
         position: relative;
-        top: 350px;
+        top: 520px;
     	margin-left: 40px;
     	&-tel{
     		font-size: 16px;
@@ -66,7 +75,29 @@ $colorRed: #E04A38;
             }
     	}
     }
+    &-services{
+        width: 768px;
+        height: 1080px;
+        background: $colorBlack;
+        position: fixed;
+        top: 0;
+        left: 200px;
+        &-content{
+            position: relative;
+            &-close{
+                position: absolute;
+                font-size: 18px;
+                line-height: 34px;
+                text-align: right;
+                text-transform: uppercase;
+                color: #6A6A6A;
+                top: 40px;
+                right: 40px;
+            }
+        }
+    }
 }
+
 }
 
 /*end header*/
@@ -96,10 +127,10 @@ $colorRed: #E04A38;
         left: 0;
         margin:0;
         &-slider-slick{
-            height: 100vh;
+            height: 1080px;
             margin-left: 25%;
             img{
-                height: 100vh;
+                height: 100%;
                 max-width: 1800px;
 
             }
@@ -124,9 +155,9 @@ $colorRed: #E04A38;
         &-menu{
             position: absolute;
             top: 0;
-            left: 10%;
+            left: 200px;
             width: 500px;
-            height: 1140px;
+            height: 1286px;
             background: $colorOrange;
             padding-left: 50px;
             padding-top: 170px;
@@ -142,17 +173,14 @@ $colorRed: #E04A38;
                 margin-bottom: 20px;
             }
 
-                &-circles{
-                    position: absolute;
-                    bottom: 0px;
-                }
+                
             p{
                 margin: 0;
                 font-size: 18px;
                 line-height: 23px;
                 color: $colorWhite;
                 max-width: 370px;
-                margin-bottom: 70px;
+                margin-bottom: 100px;
                 padding-bottom: 5px;
             }
             &-line{
@@ -163,9 +191,10 @@ $colorRed: #E04A38;
             }
             
             .slick-dots{
-                z-index: 1000;
+                z-index: 8;
                 text-align: left;
                 width: auto;
+                bottom: 10px;
                 li{
                     button{
                        border-radius: 50%; 
@@ -197,7 +226,7 @@ $colorRed: #E04A38;
             margin: 0;
             &-item{
                 display: inline-block;
-                margin-right: 31px;
+                margin-left: 31px;
                 a{
                     font-size: 16px;
                 line-height: 31px;
@@ -215,10 +244,11 @@ $colorRed: #E04A38;
         }
         &-form{
             position: absolute;
-           top: 250px;
+           top: 350px;
            right: 100px;
            text-align: right;
             h1{
+                font-style: inherit;
                 font-size: 66px;
                 line-height: 85px;
                 text-align: right;
@@ -227,6 +257,15 @@ $colorRed: #E04A38;
                 color: $colorWhite;
                 width: 803px;
                 font-weight: 700;
+                margin: 0;
+                margin-bottom: 30px;
+            }
+            form{
+                display: flex;
+                justify-content: flex-end;
+            }
+            &-input{
+                margin-left: 20px;
             }
             &-btn{
                 background: $colorOrange;
