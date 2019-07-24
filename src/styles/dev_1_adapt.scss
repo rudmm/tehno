@@ -15,6 +15,9 @@
 	.topsection{
 		&-slider-slick{
 			height: 100vh;
+			img{
+				height: 100vh;
+			}
 		}
 		&-menu{
 			height: 1200px;
