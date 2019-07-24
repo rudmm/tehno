@@ -1,7 +1,10 @@
 $colorWhite: #fff;
 $colorOrange: #FEBA03;
 $colorRed: #E04A38;
-header{
+
+/*begin header*/
+
+.header{
 	display: inline;
 	.menu{
 	width: 10%;
@@ -37,7 +40,7 @@ header{
     }
     &-contacts{
         position: relative;
-        top: 300px;
+        top: 350px;
     	margin-left: 40px;
     	&-tel{
     		font-size: 16px;
@@ -65,7 +68,11 @@ header{
     }
 }
 }
-.main{
+
+/*end header*/
+
+/*btn document*/
+
     .btn{
         width: 250px;
         height: 60px;
@@ -80,7 +87,10 @@ header{
         line-height: 34px;
         color: #000000;
     }
-    .topsection{
+
+/* begin topsection*/
+
+.topsection{
         position: relative;
         top: 0px;
         left: 0;
@@ -91,35 +101,32 @@ header{
             img{
                 height: 100vh;
                 max-width: 1800px;
-                opacity:0.8;
-                -moz-opacity:0.8;
-                filter: alpha(opacity=80) black;
 
             }
-            .slick-prev {
-              right: 170px;
-              left: auto;
-            }
-            .slick-next {
-              right: 110px;
-            }
-            .slick-prev, .slick-next{
-              opacity: 0.5;
-              z-index: 100;
-              width: 50px;
-              height: 50px;
-              background: #BFBBBA;
-              position: absolute;
-              bottom: 0;
-              margin-top: 433px;
-            }
         }
+        &-btnPrev{
+            right: 170px;
+        }
+        &-btnNext{
+            right: 110px;
+        }
+        &-btnNext,&-btnPrev{
+             width: 50px;
+            height: 50px;
+            border: none;
+            background: #BFBBBA;
+            opacity: .5;
+            position: absolute;
+            z-index: 6;
+            bottom: 30px;
+        }
+
         &-menu{
             position: absolute;
             top: 0;
             left: 10%;
             width: 500px;
-            height: 100vh;
+            height: 1140px;
             background: $colorOrange;
             padding-left: 50px;
             padding-top: 170px;
@@ -237,5 +244,20 @@ header{
                 margin-top: 10px;
             }
         }
+    }
+
+/*end topsection*/
+
+
+/*begin sectionnumber*/
+
+.sectionnumber{
+    h2{
+        font-size: 36px;
+        line-height: 46px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        z-index: 7;
     }
 }
