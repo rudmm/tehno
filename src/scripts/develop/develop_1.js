@@ -17,17 +17,27 @@ function topSectionSlider(){
      slickNext.html('');
 }
 function openCloseServicesWindow(){
-	let wServices = $('.menu-services');
-	let itemOpen = $('.menu-list-item-js-open');
-	let close = $('.menu-services-content-close');
-	itemOpen.click(function(e){
+	let menu = $('.menu');
+	menu.click(function(e){
 		e.preventDefault();
-		itemOpen.addClass('menu-list-item-open ');
-		wServices.fadeIn();
-	});
-	close.click(function(){
-		itemOpen.removeClass('menu-list-item-open');
-		wServices.fadeOut();
+		let el = $(e.target);
+		let parent = el.parent();
+		let menuList = $('.menu-list-item');
+		let wServices;
+		let parentIndex;
+		if(parent.is('li')){
+			parentIndex = menuList.index(parent); 
+			wServices = $(`.menu${parentIndex}-services`);
+			if(wServices.length){
+	            wServices.fadeIn();	
+		        parent.addClass('menu-list-item-open');
+		        let close = $(`.menu${parentIndex}-services-content-close`);
+		        close.click(function(){
+		        	wServices.fadeOut();
+		        	parent.removeClass('menu-list-item-open');
+		        });
+			}
+		}
 	});
 }
 
