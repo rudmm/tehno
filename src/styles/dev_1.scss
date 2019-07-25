@@ -431,6 +431,8 @@ a{
 
 /*end sectionnumber*/
 
+/*begin sectionservices*/
+
 .sectionservices{
     background: #E5E5E5;
     position: relative;
@@ -533,5 +535,98 @@ a{
     &-btn:hover{
         background-color: $colorOrange;
         color: $colorBlack; 
+    }
+}
+
+
+/*end sectionservices*/
+
+
+
+/* begin sectionCredit*/
+
+
+.sectionCredit{
+    margin-bottom: 70px;
+    h2{
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+    &-block{
+        display: flex;
+        margin-bottom: 50px;
+        &-img{
+            max-width: 766px;
+            margin-left: 110px;
+        }
+        &-post{
+            width: 664px;
+            height: 418px;
+            margin-left: 50px;
+            margin-top: 60px;
+        }
+        h4{
+            font-size: 24px;
+            line-height: 31px;
+            color: #1C0B05;
+            margin-top: 60px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 31px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        &-post-btn{
+            background-color: $colorOrange;
+            opacity: 1;
+        }
+        &-post-btn:hover{
+            background-color: $colorRed;
+            color: $colorWhite;
+        }
+    }
+    .reverse{
+        flex-direction: row-reverse;
+        .sectionCredit-block-img{
+            margin-left: 0;
+            margin-right: 110px;
+        }
+        .sectionCredit-block-post{
+            margin-left: 0;
+            margin-right: 50px;
+        }
+    }
+}
+
+/*end sectionCredit*/
+
+/*begin sectionCompany*/
+
+.sectionCompany{
+    min-height: 574px;
+    background-color: $colorOrange;
+    padding: 100px 261px;
+    position: relative;
+    h2{
+        margin-bottom: 70px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: $colorBrown;
+        margin-bottom: 80px;
+    }
+    &-btn{
+        opacity: 1;
+        background-color: $colorRed;
+        color: $colorWhite;
+        margin: 0 auto;
+        display: block;
+    }
+    &-btn:hover{
+        background-color: $colorBrown;
     }
 }
