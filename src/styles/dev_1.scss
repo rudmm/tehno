@@ -713,6 +713,7 @@ a{
 
         background-color: $colorWhite;
         display: flex;
+        box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.1);
     }
     .item-img{
         width: 150px;
@@ -737,5 +738,16 @@ a{
             color: $colorBlack;
             margin:10px 0 20px;
         }
+    }
+}
+
+/* end client section */
+
+
+/* begin footer styles*/
+
+.footer{
+    &-content{
+        padding: 70px 110px;
     }
 }
