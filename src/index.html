@@ -72,12 +72,30 @@
             	<li class="topsection-list-item"><a href="#">Налоговый консалтинг</a></li>
             	<li class="topsection-list-item"><a href="#">Аудиторские услуги</a></li>
             </ul>
-            <div class="topsection-form">
-            	<h1>масштабируем<br>ваши возможности</h1>
-            	<form action="#" method="post">
-            		<input type="text" placeholder="Введите имя" class="btn topsection-form-input">
-            		<input type="tel" placeholder="Телефон" class="btn topsection-form-input">
-            		<button type="submit" class="btn topsection-form-btn">Оставить заявку</button>
+            <div class="topsection-form" id="call-popup">
+            	<form action="ajax.php" method="post" class="contact-form">
+            		<div class="contact-form-tittle">
+            		<h1>масштабируем<br>ваши возможности</h1>
+            		</div>
+            		<div class="contact-form-row cfix">
+                <div class="contact-form-item">
+                    <div class="contact-form-item-input form_row">
+                        <div class="form_input">
+                           <input type="text" placeholder="Введите имя" required="required" name="contact_name" class="btn topsection-form-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-item">
+                    <div class="contact-form-item-input form_row">
+                        <div class="form_input">
+                            <input type="tel" placeholder="Телефон" required="required" name="contact_tel" value="" class="btn topsection-form-input tel-mask">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-item">
+                       <button type="submit" class="btn topsection-form-btn contact-submit">Оставить заявку</button>
+                </div>
+            </div>
             	</form>
             	<span>Отправляя форму, Вы соглашаетесь на политику обработки персональных данных.</span>
             </div>
@@ -456,7 +474,6 @@
 
     </div>
     <!-- /MAIN -->
-    //= partials/hidden-block.html
 
     //= partials/footer.html
 
