@@ -148,27 +148,51 @@ a{
 /*end header*/
 
 /*btn document*/
-.btnSLider{
 
-}
 .btn{
     width: 250px;
     height: 60px;
     padding: 21px;
-    background: #FFFFFF;
-    opacity: 0.7;
     border-radius: 2px;
     border: none;
-    transition: background-color .5s;
-}
-.btn::placeholder{
+    transition: all .5s;
+    background: $colorOrange;
+    color: $colorBlack;
+    opacity: 1;
+
+    &::placeholder{
     font-size: 18px;
     line-height: 34px;
     color: #000000;
+    transition: all .5s;
+    }
+    &:focus::placeholder{
+        color: transparent;
+        transition: all .5s;
+    }
+    &:hover{
+    background-color: $colorRed;
+    color: $colorWhite;
+    transition: all .5s;
+    }
+    &-red{
+        background-color: $colorRed;
+        color: $colorWhite;
+        &:hover{
+            background-color: $colorBrown;
+            color: $colorWhite; 
+        }
+    }
+    &-brown{
+        background-color: $colorBrown;
+        color: $colorWhite;
+        &:hover{
+            background-color: $colorOrange; 
+            color: $colorBlack;
+        }
+    }
 }
-.btn:hover{
-    transition: background-color .5s;
-}
+
 
 
 /*slick btn styles*/
@@ -240,8 +264,8 @@ a{
  &-menu{
     position: absolute;
     top: 0;
-    left: 200px;
-    width: 500px;
+    left: 10.417%;
+    width: 26.042%;
     height: 1286px;
     background: $colorOrange;
     padding-left: 50px;
@@ -331,15 +355,15 @@ a{
     }
     &-input{
         margin-left: 20px;
+        background: #FFFFFF;
+        opacity: 0.7;
+        &:hover{
+            background-color: $colorWhite;
+            color: $colorBlack;
+        }
     }
     &-btn{
-        background: $colorOrange;
-        opacity: 1;
-        transition: background-color .5s;
-    }
-    &-btn:hover{
-        background-color: $colorRed;
-        transition: background-color .5s;
+        margin-left: 20px;
     }
     span{
         font-size: 13px;
@@ -406,7 +430,7 @@ a{
         height: 150px;
         background: $colorWhite;
         display: inline-block;
-        z-index: 10;
+        z-index: 0;
         flex-basis: 700px;
         margin-left: 30px; 
         display: flex;   
@@ -523,30 +547,17 @@ a{
             line-height: 25px;
         }
         .btn{
-            background-color: $colorBrown;
-            opacity: 1;
-            color: $colorWhite;
             position: absolute;
             bottom: 30px;
             left: 51px;
         }
-        .btn:hover{
-            background-color: $colorOrange; 
-        }
     }
     &-btn{
-        background-color: $colorRed;
-        opacity: 1;
-        color: $colorWhite;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
         margin-top: 30px;
         margin-bottom: 50px;
-    }
-    &-btn:hover{
-        background-color: $colorOrange;
-        color: $colorBlack; 
     }
 }
 
@@ -590,14 +601,6 @@ a{
             margin-top: 30px;
             margin-bottom: 50px;
         }
-        &-post-btn{
-            background-color: $colorOrange;
-            opacity: 1;
-        }
-        &-post-btn:hover{
-            background-color: $colorRed;
-            color: $colorWhite;
-        }
     }
     .reverse{
         flex-direction: row-reverse;
@@ -631,14 +634,8 @@ a{
         margin-bottom: 80px;
     }
     &-btn{
-        opacity: 1;
-        background-color: $colorRed;
-        color: $colorWhite;
         margin: 0 auto;
         display: block;
-    }
-    &-btn:hover{
-        background-color: $colorBrown;
     }
 }
 
@@ -747,7 +744,82 @@ a{
 /* begin footer styles*/
 
 .footer{
+    margin-left: 10.417%;
+    width: 1700px;
     &-content{
         padding: 70px 110px;
+        display: flex;
+        margin-right: 0;
+    }
+    .item{
+
+        margin-right: 55px;
+        h3{
+        font-size: 16px;
+        color: #646464;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        }
+    }
+    &-list{
+        margin-bottom: 30px;
+        
+        li{
+            font-size: 14px;
+            line-height: 27px;
+            color: #959595;
+        }
+    }
+    &-menu{
+        width: 216px;
+        a{
+            font-size: 16px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #E04A38;
+        }
+        .menu-item{
+            margin-bottom: 25px;
+        }
+    }
+    &-logo-body{
+        height: 26px;
+        margin-bottom: 30px;
+    }
+    &-logo-social{
+        display: flex;
+        .social-vk,.social-fb,.social-inst{
+            margin-right: 12px;
+            circle{
+                transition: all .5s;
+            }
+            path{
+                transition: all .5s;
+            }
+        }
+        .social-vk:hover,.social-fb:hover,.social-inst:hover{
+           circle{
+            fill: $colorOrange;
+            transition: all .5s;
+           }
+           path{
+            fill: $colorWhite;
+            transition: all .5s;
+           }
+        }
+    }
+    &-copyright{
+        display: flex;
+        padding: 37px 110px;
+        justify-content: space-between;
+        &-element{
+            font-size: 14px;
+            line-height: 23px;
+            color: $colorBlack;
+            display: inline-block;
+        }
+        .bold{
+            font-weight: 700;
+        }
     }
 }
