@@ -41,11 +41,25 @@ function sectionServicesSlider(){
 		slidesToShow: 4,
 		dots: true,
 		appendDots: $('.sectionservices-dots'),
-		prevArrow: $('.btnPrev'),
-		nextArrow: $('.btnNxt'),
+		prevArrow: $('.services-prev'),
+		nextArrow: $('.services-next'),
 		autoplay: true,
 		autoplaySpeed: 3000,
 		swipe: false
+
+	});
+}
+function sectionClientSlider(){
+	$('.slider-client').slick({
+		slidesToShow:1,
+		variableWidth: true, 
+		dots: true,
+		appendDots: $('.client-dots'),
+		prevArrow: $('.client-prev'),
+		nextArrow: $('.client-next'),
+		swipe: false,
+		autoplay: true,
+		autoplaySpeed: 3000
 
 	});
 }
@@ -54,6 +68,7 @@ $(document).ready(function(){
 	topSectionSlider();
 	openCloseServicesWindow();
 	sectionServicesSlider();
+	sectionClientSlider();
 });
 $(window).load(function(){
 });

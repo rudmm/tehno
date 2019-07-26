@@ -181,8 +181,11 @@ a{
      z-index: 6; 
      transition: background-color .5s; 
 }
-.slide-arrow:hover{
-    transition: background-color .5s;
+.slick-arrow:hover{
+    background-color: $colorOrange;
+    opacity: 1;
+    transition: all .5s;
+
 }
 
 /*slick dots styles*/
@@ -192,7 +195,11 @@ a{
             text-align: left;
             width: auto;
             bottom: 10px;
+            height: 10px;
+            line-height: 0;
             li{
+                width: 10px;
+                height: 10px;
                 button{
                    border-radius: 50%; 
                    background: #FFFFFF;
@@ -364,16 +371,18 @@ a{
 /*end topsection*/
 
 /*h2 styles*/
-
+.section-tittle{
     h2{
     font-size: 36px;
-    line-height: 46px;
+    line-height: 32px;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
     text-align: center;
     font-weight: 700;
-    }
+    }  
+}
+  
 
 /*begin sectionnumber*/
 
@@ -431,6 +440,32 @@ a{
 
 /*end sectionnumber*/
 
+/*btn slider */
+.buttons{
+        position: absolute;
+        width: 110px;
+        height: 50px;
+        top: 96px;
+        right: 110px;   
+        .prev{
+            float: left;
+        }
+        .next{
+            float:right;
+            background-color: $colorOrange;
+        }
+        .prev, .next{
+            text-align: center;
+            padding-top: 17px;
+            opacity: 1;
+            height: 50px;
+            width: 50px;
+        }
+        .prev:hover, .next:hover{
+            background-color: $colorRed;
+        }
+    }
+
 /*begin sectionservices*/
 
 .sectionservices{
@@ -447,32 +482,9 @@ a{
         position: relative;
         height: 10px;
     }
-    &-buttons{
-        position: absolute;
-        width: 110px;
-        height: 50px;
-        top: 96px;
-        right: 110px;   
-        .btnPrev{
-            float: left;
-        }
-        .btnNxt{
-            float:right;
-            background-color: $colorOrange;
-        }
-        .btnPrev, .btnNxt{
-            text-align: center;
-            padding-top: 17px;
-            opacity: 1;
-        }
-        .btnPrev:hover, .btnNxt:hover{
-            background-color: $colorRed;
-        }
-    }
     .slick-dots{
         bottom: 0;
         height: 10px;
-        line-height: 0;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -604,8 +616,7 @@ a{
 
 /*begin sectionCompany*/
 
-.sectionCompany{
-    min-height: 574px;
+.section-company{
     background-color: $colorOrange;
     padding: 100px 261px;
     position: relative;
@@ -628,5 +639,103 @@ a{
     }
     &-btn:hover{
         background-color: $colorBrown;
+    }
+}
+
+/*end sectionCompany*/
+
+
+/* begin sectionClient*/
+
+.client{
+    background: #F8FAFC;
+    position: relative;
+    min-height: 750px;
+    .section-tittle{
+        h2{
+
+        padding-top: 50px;
+        }
+    }
+    &-dots{
+        min-width: 130px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        height: 10px;
+        top: 116px;
+        transform: translateX(-50%);
+        .slick-dots{
+            bottom: 0;
+            li{
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .slick-dots li button{
+            background: #BFBBBA;
+            opacity: .5;
+        }
+        .slick-dots .slick-active button{
+            background-color: $colorOrange;
+            opacity: 1;
+        }
+    }
+    &-buttons{
+        position: absolute;
+        width: 110px;
+        height: 50px;
+        top: 96px;
+        right: 110px;
+    }
+    .slider-client{
+        height: 693px;
+        width: 1041px;
+        position: absolute;
+        top: 63px;
+        img{
+            height: 100%;
+            margin-right: 20px;
+        }
+    }
+    &-post{
+        width: 812px;
+        height: 530px;
+        position: absolute;
+        right: 110px;
+        top: 176px;
+    }
+    &-post-item{
+        width: 812px;
+        height: 150px;
+        margin-bottom: 40px;
+
+        background-color: $colorWhite;
+        display: flex;
+    }
+    .item-img{
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        img{
+            width: 100%;
+            border: 5px solid $colorOrange;
+        }
+    }
+    .item-text{
+        width: 662px;
+        display: inline-block;
+        padding-left: 30px;
+        h3{
+            font-size: 20px;
+            color: $colorBlack;
+            margin-top:47px;
+        }
+        p{
+            font-size: 14px;
+            color: $colorBlack;
+            margin:10px 0 20px;
+        }
     }
 }
