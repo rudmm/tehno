@@ -43,7 +43,7 @@ function sectionServicesSlider(){
 		appendDots: $('.sectionservices-dots'),
 		prevArrow: $('.services-prev'),
 		nextArrow: $('.services-next'),
-		autoplay: true,
+		//autoplay: true,
 		autoplaySpeed: 3000,
 		swipe: false
 
@@ -63,12 +63,56 @@ function sectionClientSlider(){
 
 	});
 }
+let  animateSectionNumber = function(){
+	let scroll = $(window).scrollTop();
+	let block = $('.sectionnumber-bottom .sectionnumber-block');
+	let blockTop = $('.sectionnumber-top');
+	let blockBottom = $('.sectionnumber-bottom');
+	let positionBottom= block.offset().top+block.height();
+	if(scroll+$(window).height()>positionBottom && scroll<positionBottom){
+		blockTop.addClass('animate');
+		blockBottom.addClass('animate');
+	}else{
+		blockTop.removeClass('animate');
+		blockBottom.removeClass('animate');
+	}
+}
+
+function sliderList(){
+	let list = $('.sectionservices-slider-slide-text ul');
+	for(let i =0;i<list.length;i++){
+		let listItem = list.eq(i).find('li');
+		if(listItem.length>4){
+			for(let j =3;j<listItem.length;j++){
+				listItem.eq(j).css('display', 'none');
+			}
+			list.eq(i).append(`<li class="list-btn" data-id=${i}>Cмотреть весь список</li>`);
+		}
+	}	
+}
+
+function showListSlider(){
+	let listBtn = $('.list-btn');
+	let list = $('.sectionservices-slider-slide-text ul');
+	for(let i=0;i<listBtn.length;i++){
+		listBtn.eq(i).click(function(){
+			let id = $(this).attr("data-id");
+			let listItem = list.eq(id).find('li');
+			for(let j =3;j<listItem.length;j++){
+				listItem.eq(j).css('display', 'block');
+			}
+		});
+	}
+}
 
 $(document).ready(function(){
 	topSectionSlider();
 	openCloseServicesWindow();
 	sectionServicesSlider();
 	sectionClientSlider();
+	$(window).scroll(animateSectionNumber);
+	sliderList();
+	showListSlider();
 });
 $(window).load(function(){
 });
