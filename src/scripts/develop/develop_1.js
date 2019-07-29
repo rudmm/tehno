@@ -17,11 +17,10 @@ function openCloseServicesWindow() {
   menu.click(function(e) {
     e.preventDefault();
     let el = $(e.target);
-    let parent = el.parent();
+    let parent = el.parents('.menu-list-item');
     let menuList = $('.menu-list-item');
     let wServices;
-    let parentIndex;
-    if (parent.is('li')) {
+    let parentIndex;  
       parentIndex = menuList.index(parent);
       wServices = $(`.menu${parentIndex}-services`);
       if (wServices.length) {
@@ -33,7 +32,6 @@ function openCloseServicesWindow() {
           parent.removeClass('menu-list-item-open');
         });
       }
-    }
   });
 }
 
