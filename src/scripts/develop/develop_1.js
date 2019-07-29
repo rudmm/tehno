@@ -20,7 +20,7 @@ function openCloseServicesWindow() {
     let parent = el.parents('.menu-list-item');
     let menuList = $('.menu-list-item');
     let wServices;
-    let parentIndex;  
+    let parentIndex;
       parentIndex = menuList.index(parent);
       wServices = $(`.menu${parentIndex}-services`);
       if (wServices.length) {
@@ -151,6 +151,7 @@ function opacityListSlider() {
 	sliderItem.eq(sliderItem.length-1).addClass('slider-item-opacity');
 	sliderItem.eq(sliderItem.length-1).find('button').attr('disabled','true');
 }
+
 $(document).ready(function() {
   topSectionSlider();
   openCloseServicesWindow();

@@ -90,6 +90,7 @@ a {
       top: 520px;
       margin-left: 40px;
     }
+
     .menu-contacts-tel {
       font-size: 16px;
       line-height: 21px;
@@ -131,8 +132,8 @@ a {
         position: relative;
         padding-top: 170px;
         padding-left: 50px;
-
       }
+
       .menu1-content-close {
         position: absolute;
         font-size: 18px;
@@ -144,11 +145,13 @@ a {
         right: 40px;
         cursor: pointer;
       }
+
       .menu1-content-block {
         width: 320px;
         display: inline-block;
         vertical-align: top;
       }
+
       .menu1-content-block-p h3 {
         font-size: 20px;
         line-height: 38px;
@@ -162,6 +165,7 @@ a {
         list-style-type: none;
         margin: 0 0 74px;
       }
+
       .menu1-block-list-item {
         color: #fff;
         font-size: 15px;
@@ -740,6 +744,8 @@ a {
         font-weight: 700;
         margin-top: 30px;
         margin-bottom: 50px;
+        max-height: 186px;
+        overflow: hidden;
       }
     }
   }

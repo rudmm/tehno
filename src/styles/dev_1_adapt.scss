@@ -38,7 +38,16 @@
 		}
 	}
 }
-@media screen and (max-width: 1600px) {}
+@media screen and (max-width: 1600px) {
+	.header{
+		.menu{
+			width: 10.417%;
+		}
+		.menu-contacts{
+			top: 320px;
+		}
+	}
+}
 @media screen and (max-width: 1366px) {
 	.header {
 		.menu {
