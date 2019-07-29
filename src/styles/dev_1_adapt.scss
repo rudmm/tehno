@@ -1,90 +1,83 @@
-@media screen and (max-width: 1920px){
-	.header{
-		.menu{
-			&-contacts{
+@media screen and (max-width: 1920px) {
+	.header {
+		.menu {
+			&-contacts {
 				top: 430px;
 			}
-			&-services{
+
+			&-services {
 				height: 100vh;
 			}
 		}
 	}
-
 	/*begin topsection*/
-
-	.topsection{
-		&-slider-slick{
+	.top {
+		&-slider-slick {
 			height: 100vh;
-			img{
+
+			.item {
 				height: 100vh;
 			}
 		}
-		&-menu{
+
+		&-menu {
 			height: 1200px;
-			p{
-				margin-bottom: 70px;
-			}
-		}
-		&-form{
-			top: 300px;
-		}
-	}
 
-}
-@media screen and (max-width: 1600px){
-
-}
-@media screen and (max-width: 1366px){
-.header{
-	.menu{
-		height: 768px;
-		&-logo{
-		svg{
-			width: 100px;
-			height: 17px;
-		   }
-		}
-		&-list{
-			&-item{
-				margin-left: 20px;
-				a{
-					    font-size: 14px;
-                        line-height: 16px;
+			.item-text {
+				p {
+					margin-bottom: 70px;
 				}
 			}
 		}
-		&-contacts{
-			margin-left: 20px;
-		&-tel{
-			font-size: 11px;
-			line-height: 18px;
-		}
-		&-adress{
-			font-size: 12px;
+
+		&-form {
+			top: 300px;
 		}
 	}
+}
+@media screen and (max-width: 1600px) {}
+@media screen and (max-width: 1366px) {
+	.header {
+		.menu {
+			height: 768px;
+
+			&-logo {
+				svg {
+					width: 100px;
+					height: 17px;
+				}
+			}
+
+			&-list {
+				&-item {
+					margin-left: 20px;
+
+					a {
+						font-size: 14px;
+						line-height: 16px;
+					}
+				}
+			}
+
+			&-contacts {
+				margin-left: 20px;
+
+				&-tel {
+					font-size: 11px;
+					line-height: 18px;
+				}
+
+				&-adress {
+					font-size: 12px;
+				}
+			}
+		}
 	}
 }
-
-}
-@media screen and (max-width: 1280px){
-
-}
-@media screen and (max-width: 1024px){
-
-}
-@media screen and (max-width: 992px){
-
-}
-@media screen and (max-width: 767px){
-
-}
-@media screen and (max-width: 666px){
-
-}
-@media screen and (max-width: 479px){
-
-}
-@media screen and (max-width: 320px){
-
-}
+@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 767px) {}
+@media screen and (max-width: 666px) {}
+@media screen and (max-width: 479px) {}
+@media screen and (max-width: 320px) {}
