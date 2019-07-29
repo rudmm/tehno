@@ -49,6 +49,7 @@ function sectionServicesSlider() {
     swipe: false
 
   });
+  sliderList();
 }
 
 function sectionClientSlider() {
@@ -86,7 +87,7 @@ function sliderList() {
     let listItem = list.eq(i).find('li');
     if (listItem.length > 4) {
       for (let j = 3; j < listItem.length; j++) {
-        listItem.eq(j).css('display', 'none');
+        listItem.eq(j).addClass('close');
       }
       list.eq(i).append(`<li class="list-btn" data-id=${i}>Cмотреть весь список</li>`);
     }
@@ -98,22 +99,68 @@ function showListSlider() {
   let list = $('.slider-item-text ul');
   for (let i = 0; i < listBtn.length; i++) {
     listBtn.eq(i).click(function() {
-      let id = $(this).attr("data-id");
-      let listItem = list.eq(id).find('li');
-      for (let j = 3; j < listItem.length; j++) {
-        listItem.eq(j).css('display', 'block');
-      }
+			if(!$(this).parents('.slider-item').hasClass('slider-item-opacity')){
+				let id = $(this).attr("data-id");
+	      let listItem = list.eq(id).find('li');
+	      for (let j = 3; j < listItem.length; j++) {
+	        listItem.eq(j).removeClass('close');
+	      }
+				listBtn.detach();
+				list.eq(id).append(`<li class="btn-close">Cкрыть весь список</li>`);
+	    	closeListSlider();
+			}
     });
   }
 }
 
+function closeListSlider(){
+	let btnClose = $('.btn-close');
+	let list = btnClose.parent();
+	let id = $('.slider-item-text ul').index(list);
+	list = list.find('li');
+	btnClose.click(function(){
+		closeListItem(list);
+		btnClose.detach();
+		list.parent().append(`<li class="list-btn" data-id=${id}>Cмотреть весь список</li>`);
+		showListSlider();
+	});
+}
+
+function closeListItem(list){
+	for(let i=3;i<list.length;i++){
+		list.eq(i).addClass('close');
+	}
+}
+
+function clickButtonSlider(){
+	let btnLf = $('.services-prev');
+	let btnRg = $('.services-next');
+	btnLf.click(function(){
+		opacityListSlider();
+	});
+	btnRg.click(function(){
+		opacityListSlider();
+	});
+}
+function opacityListSlider() {
+	let sliderItem = $('.services-slider .slick-active');
+	sliderItem.eq(0).addClass('slider-item-opacity');
+	sliderItem.eq(0).find('button').attr('disabled','true');
+	for(let i=1;i<sliderItem.length-1;i++){
+		sliderItem.eq(i).removeClass('slider-item-opacity');
+		sliderItem.eq(i).find('button').removeAttr('disabled');
+	}
+	sliderItem.eq(sliderItem.length-1).addClass('slider-item-opacity');
+	sliderItem.eq(sliderItem.length-1).find('button').attr('disabled','true');
+}
 $(document).ready(function() {
   topSectionSlider();
   openCloseServicesWindow();
   sectionServicesSlider();
   sectionClientSlider();
-  sliderList();
   showListSlider();
+	clickButtonSlider();
+	opacityListSlider();
 });
 $(window).load(function() {});
 
