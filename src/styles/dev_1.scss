@@ -132,7 +132,7 @@ a {
         padding-top: 170px;
         padding-left: 50px;
 
-        &-close {
+        .menu1-content-close {
           position: absolute;
           font-size: 18px;
           line-height: 30px;
@@ -144,7 +144,7 @@ a {
           cursor: pointer;
         }
 
-        &-block {
+        .menu1-content-block {
           width: 320px;
           display: inline-block;
           vertical-align: top;
@@ -161,7 +161,7 @@ a {
             margin: 0;
           }
 
-          &-list {
+          .menu-block-list {
             padding: 0;
             list-style-type: none;
             margin: 0;
@@ -754,23 +754,20 @@ a {
 }
 /*end sectionCredit*/
 /*begin sectionCompany*/
-.section-company {
+.company {
   background-color: $colorOrange;
   padding: 100px 261px;
   position: relative;
-
-  h2 {
+  .section-tittle h2 {
     margin-bottom: 70px;
   }
-
-  p {
+  &-text p {
     font-size: 18px;
     line-height: 23px;
     text-align: center;
     color: $colorBrown;
     margin-bottom: 80px;
   }
-
   &-btn {
     margin: 0 auto;
     display: block;
@@ -871,6 +868,11 @@ a {
     width: 662px;
     display: inline-block;
     padding-left: 30px;
+    svg.active{
+      path{
+        fill: $colorOrange;
+      }
+    }
 
     h3 {
       font-size: 20px;

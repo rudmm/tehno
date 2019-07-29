@@ -27,7 +27,7 @@ function openCloseServicesWindow() {
       if (wServices.length) {
         wServices.fadeIn();
         parent.addClass('menu-list-item-open');
-        let close = $(`.menu${parentIndex}-services-content-close`);
+        let close = $(`.menu${parentIndex}-content-close`);
         close.click(function() {
           wServices.fadeOut();
           parent.removeClass('menu-list-item-open');
