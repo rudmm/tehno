@@ -132,6 +132,8 @@ a {
         position: relative;
         padding-top: 170px;
         padding-left: 50px;
+        display: flex;
+        justify-content: space-between;
       }
 
       .menu1-content-close {
@@ -150,6 +152,7 @@ a {
         width: 320px;
         display: inline-block;
         vertical-align: top;
+        margin-right: auto;
       }
 
       .menu1-content-block-p h3 {

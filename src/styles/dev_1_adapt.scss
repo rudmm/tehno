@@ -50,6 +50,22 @@
 		.menu-list-item{
 			padding-left: 30px;
 		}
+		.menu1-services{
+			height: 891px;
+			margin-left: 10.417%;
+			width: 40%;
+			.menu1-content-block{
+				width: 41.66667%;
+			}
+			.menu1-content-block-p h3{
+				font-size: 16px;
+				line-height: 22px;
+			}
+			.menu1-block-list-item{
+				font-size: 13px;
+				line-height: 26px;
+			}
+		}
 	}
 	/*end header*/
 
@@ -160,6 +176,24 @@ section{
 			a{
 				font-size: 17px;
 			}
+		}
+		.menu1-services{
+			height: 768px;
+			.menu1-content-block-p h3{
+				font-size: 14px;
+				line-height: 18px;
+			}
+			.menu1-content-block-p svg{
+				height: 12px;
+			}
+			.menu1-block-list-item{
+				font-size: 12px;
+				line-height: 19px;
+			}
+		}
+		.menu1-services-content{
+			padding-top: 140px;
+			padding-left: 40px;
 		}
 	}
 	/*end header styles*/
@@ -272,6 +306,19 @@ section{
 		.menu-contacts{
 			top: 235px;
 		}
+		.menu1-services{
+			height: 720px;
+		}
+		.menu1-services-content{
+			padding-top: 120px;
+			.menu1-content-close{
+				font-size: 17px;
+			}
+			.menu1-content-block-p h3{
+				font-size: 13px;
+				line-height: 15px;
+			}
+		}
 	}
 	/*end header styles*/
 
@@ -372,6 +419,30 @@ section{
 		.menu .menu-contacts-adress{
 			font-size: 10px;
 			line-height: 12px;
+		}
+		.menu1-services{
+			height: 576px;
+			.menu1-block-list-item{
+				font-size: 9px;
+				line-height: 15px;
+			}
+		}
+		.menu1-services-content{
+			padding-top: 60px;
+			padding-left: 30px;
+			.menu1-content-close{
+				top: 15px;
+				right: 25px;
+				font-size: 14px;
+				line-height: 20px;
+			}
+			.menu1-content-block-p h3{
+				font-size: 10px;
+				line-height: 10px;
+			}
+			.menu1-content-block-p svg{
+				height: 8px;
+			}
 		}
 	}
 
@@ -522,6 +593,23 @@ section{
 		.menu-contacts{
 			top: 210px;
 		}
+		.menu1-services{
+			height: 550px;
+		}
+		.menu1-services-content{
+			padding-left: 25px;
+			.menu1-content-block-p h3{
+				font-size: 9px;
+				line-height: 9px;
+			}
+		}
+		.menu .menu1-block-list{
+			margin-bottom: 40px;
+			.menu1-block-list-item{
+				font-size: 8px;
+				line-height: 14px;
+			}
+		}
 	}
 	/*end header styles*/
 
@@ -592,6 +680,9 @@ section{
 		.menu-list-item a{
 			font-size: 11px;
 		}
+		.menu-list-item svg{
+			height: 10px;
+		}
 		.menu-contacts{
 			top: 245px;
 		}
@@ -605,6 +696,29 @@ section{
 		.menu .menu-contacts-adress{
 			font-size: 7px;
 			line-height: 9px;
+		}
+		.menu1-services{
+			height: 505px;
+		}
+		.menu1-services-content{
+			padding-top: 45px;
+			padding-left: 20px;
+			.menu1-content-close{
+				top: 8px;
+				right: 15px;
+				font-size: 11px;
+				line-height: 15px;
+			}
+			.menu1-content-block-p h3{
+				font-size: 7px;
+				line-height: 7px;
+			}
+			.menu1-content-block-p svg{
+				height: 7px;
+			}
+		}
+		.menu .menu1-block-list .menu1-block-list-item{
+			font-size: 7px;
 		}
 	}
 	/*end header styles*/
