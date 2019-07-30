@@ -112,6 +112,12 @@ section{
 
 	/*end top section styles*/
 
+	/*section-tittle styles*/
+	.section-tittle{
+		h1,h2,h3,h4,h5,h6{
+			font-size: 34px;
+		}
+	}
 	/*begin number section styles*/
 	.number{
 		.section-tittle h2{
@@ -145,6 +151,16 @@ section{
 				line-height: 25px;
 			}
 		}
+	}
+
+	/*end section number styles*/
+
+	/*begin services section*/
+	.services{
+		.section-tittle h2{
+			padding-top: 40px;
+		}
+		.services-slider{}
 	}
 
 }

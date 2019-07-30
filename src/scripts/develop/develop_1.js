@@ -44,7 +44,15 @@ function sectionServicesSlider() {
     nextArrow: $('.services-next'),
     //autoplay: true,
     autoplaySpeed: 3000,
-    swipe: false
+    swipe: false,
+    responsive: [
+      {
+        breakpoint: 1600,
+        settings:{
+          slidesToShow: 3
+        }
+      }
+    ]
 
   });
   sliderList();
@@ -158,8 +166,8 @@ $(document).ready(function() {
   sectionServicesSlider();
   sectionClientSlider();
   showListSlider();
-	clickButtonSlider();
-	opacityListSlider();
+	//clickButtonSlider();
+	//opacityListSlider();
 });
 $(window).load(function() {});
 
