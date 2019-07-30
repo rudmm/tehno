@@ -167,5 +167,5 @@ $(window).resize(function() {
 
 });
 $(window).scroll(function() {
-  animateSectionNumber();
+  //animateSectionNumber();
 });

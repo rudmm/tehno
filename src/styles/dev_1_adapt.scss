@@ -45,50 +45,382 @@
 		}
 		.menu-contacts{
 			top: 320px;
+			margin-left: 30px;
+		}
+		.menu-list-item{
+			padding-left: 30px;
 		}
 	}
+	/*end header*/
+
+	/* section styles*/
+section{
+	margin-left: 10.417%;
+}
+
+	/*begin top section */
+
+	.top{
+		.list-block .item-text h2{
+			font-size: 28px;
+			line-height: 41px;
+		}
+		&-menu{
+			padding-left: 40px;
+			height: 1115px;
+		}
+		.list-block .item-text p{
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 55px;
+			max-width: 320px;
+		}
+		.item-line{
+			width: 320px;
+			bottom: -27px;
+		}
+		.item-line svg{
+			width: 360px;
+		}
+		.top-slider-slick{
+			height: 891px;
+			.item{
+				height: 891px;
+			}
+		}
+
+	}
+
+	/*end top section styles*/
+
+	/*begin number section styles*/
+
+
 }
 @media screen and (max-width: 1366px) {
-	.header {
-		.menu {
-			height: 768px;
-
-			&-logo {
-				svg {
-					width: 100px;
-					height: 17px;
-				}
-			}
-
-			&-list {
-				&-item {
-					margin-left: 20px;
-
-					a {
-						font-size: 14px;
-						line-height: 16px;
-					}
-				}
-			}
-
-			&-contacts {
+	.header{
+		.menu{
+			&-contacts{
 				margin-left: 20px;
+				top: 250px;
+			}
+			.menu-contacts-tel{
+				font-size: 13px;
+				line-height: 18px;
+			}
+			.menu-contacts-adress{
+				font-size: 12px;
+				line-height: 15px;
+			}
+		}
+		.menu-logo{
+			margin-bottom: 70px;
+		}
+		.menu-logo svg{
+			width: 100px;
+			height: 17px;
+		}
+		.menu-list-item{
+			padding-left: 20px;
+			a{
+				font-size: 17px;
+			}
+		}
+	}
+	/*end header styles*/
 
-				&-tel {
-					font-size: 11px;
-					line-height: 18px;
-				}
+/*btn styles*/
+.btn{
+	width: 215px;
+	height: 50px;
+	padding: 15px;
+	font-size: 14px;
+	&::placeholder{
+		font-size: 14px;
+	}
+}
+/*end btn styles*/
 
-				&-adress {
-					font-size: 12px;
-				}
+/* styles error form*/
+
+#contact_name-error{
+	font-size: 14px;
+	right: 603px;
+}
+#contact_tel-error{
+	font-size: 14px;
+	right: 232px;
+}
+	/* begin styles top section*/
+
+
+	.top{
+		&-menu{
+			padding-left: 30px;
+			padding-top: 140px;
+			height: 875px;
+		}
+		.list-block .item-text{
+			h2{
+				font-size: 25px;
+				line-height: 35px;
+				margin-bottom: 15px;
+			}
+			p{
+				font-size: 15px;
+				line-height: 18px;
+				margin-bottom: 47px;
+				max-width: 280px;
+			}
+		}
+		.item-line svg{
+			width: 310px;
+		}
+		.top-slider-slick{
+			height: 768px;
+			.item{
+				height: 768px;
+			}
+		}
+		.top-slider-button{
+			right: 80px;
+		}
+		&-list{
+			top: 40px;
+			right: 80px;
+		}
+		&-list-item a{
+			font-size: 15px;
+			line-height: 28px;
+		}
+		&-form{
+			top: 230px;
+			right: 80px;
+		}
+		&-form .contact-form-tittle h1{
+			font-size: 58px;
+			line-height: 70px;
+			margin-bottom: 20px;
+		}
+		&-form .contact-form-row{
+			justify-content: flex-end;
+		}
+		&-form .form-text span{
+			font-size: 12px;
+			margin-top: 17px;
+		}
+	}
+}
+@media screen and (max-width: 1280px) {
+	/* header styles*/
+	.header{
+		.menu-logo{
+			margin-bottom: 50px;
+		}
+		.menu-contacts{
+			top: 235px;
+		}
+	}
+	/*end header styles*/
+
+	/*begin top section*/
+
+	.top{
+		.top-slider-slick{
+			height: 720px;
+		}
+		.top-slider-slick .item{
+			height: 720px;
+		}
+		.top-menu{
+			padding-top: 120px;
+		}
+		.list-block .item-text p {
+			margin-bottom: 37px;
+		}
+		&-list{
+			right: 70px;
+		}
+		&-form{
+			right: 70px;
+		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	.header{
+		.menu-logo{
+			margin: 20px 0;
+		}
+		.menu-logo svg{
+			width: 80px;
+		}
+		.menu-list-item{
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+		}
+		.menu-list-item a{
+			font-size: 14px;
+		}
+		.menu-contacts{
+			margin-left: 10px;
+			top: 245px;
+		}
+		.menu .menu-contacts-tel{
+			font-size: 11px;
+			line-height: 15px;
+			a{
+				margin-bottom: 15px;
+			}
+		}
+		.menu .menu-contacts-adress{
+			font-size: 10px;
+			line-height: 12px;
+		}
+	}
+
+	/* end header styles*/
+
+	/*btn styles*/
+
+	.btn{
+		width: 165px;
+		height: 40px;
+		padding: 10px;
+		font-size: 13px;
+		&::placeholder{
+			font-size: 13px;
+		}
+	}
+
+	/*end btn styles*/
+
+	/*slick btn styles*/
+
+	.slick-arrow.slide-next, .slick-arrow.slide-prev{
+		width: 40px;
+		height: 40px;
+		padding-top: 14px;
+		svg{
+			width: 7px;
+		}
+	}
+
+	/*begin error form styles*/
+	#contact_tel-error{
+		font-size: 11px;
+		right: 179px;
+	}
+	#contact_name-error{
+		font-size: 11px;
+		right: 470px;
+	}
+
+	/*begin top section*/
+	.top{
+		.top-slider-slick{
+			height: 576px;
+		}
+		.top-slider-button{
+			width: 90px;
+			right: 40px;
+		}
+		.top-slider-slick .item{
+			height: 576px;
+		}
+		.top-list{
+			top: 30px;
+			right: 40px;
+		}
+		.top-list-item{
+			margin-left: 20px;
+		}
+		.top-list-item a{
+			font-size: 13px;
+			line-height: 20px;
+		}
+		.top-form{
+			right: 40px;
+			top: 190px;
+		}
+		.top-form .contact-form-tittle h1{
+			font-size: 45px;
+			line-height: 55px;
+			margin-bottom: 10px;
+			width: 600px;
+		}
+		.top-menu{
+			padding-top: 60px;
+		}
+		.top-menu-dots{
+			height: 10px;
+		}
+	 .list-block .item-text{
+		 h2{
+ 			font-size: 20px;
+ 			line-height: 28px;
+ 			margin-bottom: 10px;
+ 		}
+		p{
+			font-size: 13px;
+			line-height: 17px;
+			max-width: 190px;
+			margin-bottom: 20px;
+		}
+	 }
+	 .list-block .item-line{
+		 bottom: -40px;
+	 }
+	 .list-block .item-line svg{
+		 width: 220px;
+	 }
+	}
+}
+@media screen and (max-width: 992px) {
+	/*header styles*/
+	.header{
+		.menu-contacts{
+			top: 210px;
+		}
+	}
+	/*end header styles*/
+
+	/*btn styles*/
+	.btn{
+		width: 145px;
+		height: 35px;
+		font-size: 12px;
+		&::placeholder{
+			font-size: 12px;
+		}
+	}
+
+	/*top section styles*/
+
+	.top{
+		.top-form{
+			.contact-form-tittle h1{
+				font-size: 40px;
+				line-height: 50px;
+				width: 500px;
+			}
+		}
+		.top-slider-slick{
+			height: 550px;
+		}
+		.top-slider-slick .item{
+			height: 550px;
+		}
+		.list-block .item-text{
+			h2{
+				line-height: 24px;
+			}
+			p{
+				margin-bottom: 15px;
 			}
 		}
 	}
 }
-@media screen and (max-width: 1280px) {}
-@media screen and (max-width: 1024px) {}
-@media screen and (max-width: 992px) {}
 @media screen and (max-width: 767px) {}
 @media screen and (max-width: 666px) {}
 @media screen and (max-width: 479px) {}
