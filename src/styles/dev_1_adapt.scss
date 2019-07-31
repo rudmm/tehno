@@ -213,6 +213,55 @@ section{
 
 	/*end company section*/
 
+	/*begin client section*/
+
+	.client{
+		min-height: 670px;
+		.section-tittle h2{
+			padding-top: 40px;
+		}
+		&-dots{
+			top: 106px;
+		}
+		.buttons{
+			top: 86px;
+		}
+		.slider-client{
+			width: 868px;
+			height: 577px;
+			.item{
+				width: 868px;
+				height: 577px;
+			}
+			.item-image{
+				height: 100%;
+				width: 100%;
+			}
+		}
+		&-post{
+			width: 650px;
+			top: 165px;
+			height: 475px;
+		}
+		&-post-item{
+			width: 100%;
+			height: 140px;
+			margin-bottom: 25px;
+		}
+		.item-img{
+			width: 140px;
+			height: 100%;
+		}
+		.item-text{
+			width: 510px;
+			padding-left: 20px;
+			h3{
+				margin-top: 35px;
+			}
+		}
+	}
+
+	/*end client section*/
 
 }
 @media screen and (max-width: 1366px) {
@@ -456,7 +505,54 @@ section{
 
 	/*end company section*/
 
+	/*begin client section*/
 
+	.client{
+		min-height: 580px;
+		.section-tittle h2{
+			padding-top: 30px;
+		}
+		&-dots{
+			top: 96px;
+		}
+		.buttons{
+			top: 76px;
+		}
+		.slider-client{
+			width: 724px;
+			height: auto;
+			.item{
+				width: 724px;
+				height: 480px;
+			}
+		}
+		&-post{
+			width: 550px;
+			top: 140px;
+			height: 403px;
+		}
+		&-post-item{
+			height: 120px;
+			margin-bottom: 20px;
+		}
+		.item-img{
+			width: 120px;
+			height: 100%;
+		}
+		.item-text{
+			width: 430px;
+			padding-left: 20px;
+			h3{
+				font-size: 19px;
+			}
+			p{
+				font-size: 13px;
+				margin: 7px 0 10px;
+			}
+		}
+	}
+
+	/*end client section*/
 }
 @media screen and (max-width: 1280px) {
 	/* header styles*/
@@ -585,6 +681,16 @@ section{
 
 	/*end credit section styles*/
 
+	/*begin section client*/
+
+	.client{
+		.buttons{
+			right: 60px;
+		}
+		&-post{
+			right: 60px;
+		}
+	}
 
 }
 @media screen and (max-width: 1024px) {
@@ -876,6 +982,65 @@ section{
 		}
 	}
 
+	/*end company section*/
+
+	/*begin client section*/
+
+	.client{
+		min-height: 430px;
+		.section-tittle h2{
+			padding-top: 20px;
+		}
+		&-dots{
+			top: 70px;
+		}
+		.buttons{
+			width: 90px;
+			height: 40px;
+			top: 60px;
+			right: 40px;
+		}
+		.slider-client{
+			width: 555px;
+			.item{
+				width: 555px;
+				height: 367px;
+			}
+		}
+		&-post{
+			right: 40px;
+			height: 290px;
+			width: 460px;
+			top: 120px;
+		}
+		&-post-item{
+			margin-bottom: 10px;
+			height: 90px;
+		}
+		.item-img{
+			width: 90px;
+			img{
+				border-width: 4px;
+			}
+		}
+		.item-text{
+			width: 370px;
+			h3{
+				margin-top: 20px;
+				font-size: 17px;
+			}
+			p{
+				font-size: 11px;
+				margin-bottom: 7px;
+			}
+			&-pic svg{
+				height: 9px;
+				width: 9px;
+			}
+		}
+	}
+
+	/*end client section*/
 }
 @media screen and (max-width: 992px) {
 	/*header styles*/
@@ -972,6 +1137,60 @@ section{
 
 	/*end services section*/
 
+	/*begin client section*/
+
+	.client{
+		min-height: 430px;
+		.section-tittle h2{
+			padding-top: 20px;
+		}
+		&-dots{
+			top: 70px;
+		}
+		.buttons{
+			width: 90px;
+			height: 40px;
+			top: 60px;
+			right: 40px;
+		}
+		.slider-client{
+			width: 555px;
+			.item{
+				width: 555px;
+				height: 367px;
+			}
+		}
+		&-post{
+			right: 40px;
+			height: 290px;
+			width: 460px;
+			top: 120px;
+		}
+		&-post-item{
+			margin-bottom: 10px;
+			height: 90px;
+		}
+		.item-img{
+			width: 90px;
+		}
+		.item-text{
+			width: 370px;
+			h3{
+				margin-top: 20px;
+				font-size: 17px;
+			}
+			p{
+				font-size: 11px;
+				margin-bottom: 7px;
+			}
+			&-pic svg{
+				height: 9px;
+				width: 9px;
+			}
+		}
+	}
+
+	/*end client section*/
 
 }
 @media screen and (max-width: 767px) {
@@ -1207,6 +1426,65 @@ section{
 			line-height: 16px;
 		}
 	}
+
+	/*end company section*/
+
+	/*begin client section*/
+
+	.client{
+		min-height: 340px;
+		.section-tittle h2{
+		}
+		&-dots{
+			top: 60px;
+		}
+		.buttons{
+			top: 45px;
+			right: 20px;
+		}
+		.slider-client{
+			width: 416px;
+			.item{
+				width: 416px;
+				height: 277px;
+			}
+		}
+		&-post{
+			right: 20px;
+			height: 220px;
+			width: 355px;
+			top: 110px;
+		}
+		&-post-item{
+			margin-bottom: 5px;
+			height: 70px;
+		}
+		.item-img{
+			width: 70px;
+			img{
+				border-width: 3px;
+			}
+		}
+		.item-text{
+			width: 285px;
+			padding-left: 10px;
+			h3{
+				margin-top: 15px;
+				font-size: 13px;
+			}
+			p{
+				margin-top: 4px;
+				margin-bottom: 4px;
+				font-size: 10px;
+			}
+			&-pic svg{
+				height: 8px;
+				width: 8px;
+			}
+		}
+	}
+
+	/*end client section*/
 }
 @media screen and (max-width: 666px) {
 	.header{
@@ -1346,6 +1624,56 @@ section{
 			font-size: 10px;
 		}
 	}
+
+	/*end company section*/
+
+	/*begin client section*/
+
+	.client{
+		&-dots{
+			top: 55px;
+		}
+		.buttons{
+			width: 65px;
+			right: 10px;
+			height: 30px;
+		}
+		.slider-client{
+			width: 360px;
+			.item{
+				width: 360px;
+				height: 240px;
+			}
+		}
+		&-post{
+			right: 10px;
+			top: 100px;
+			height: 203px;
+			width: 315px;
+		}
+		&-post-item{
+			height: 64px;
+		}
+		.item-img{
+			width: 64px;
+		}
+		.item-text{
+			width: 250px;
+			h3{
+				font-size: 11px;
+			}
+			p{
+				font-size: 9px;
+				line-height: 9px;
+			}
+			&-pic svg{
+				height: 7px;
+				width: 7px;
+			}
+		}
+	}
+
+	/*end client section*/
 }
 @media screen and (max-width: 479px) {}
 @media screen and (max-width: 320px) {}

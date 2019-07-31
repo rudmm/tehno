@@ -80,7 +80,7 @@ function sectionClientSlider() {
     prevArrow: $('.client-prev'),
     nextArrow: $('.client-next'),
     swipe: false,
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 3000
 
   });
