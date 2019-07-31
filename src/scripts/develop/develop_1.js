@@ -51,7 +51,20 @@ function sectionServicesSlider() {
         settings:{
           slidesToShow: 3
         }
+      },
+      {
+        breakpoint: 767,
+        settings:{
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 666,
+        settings:{
+          slidesToShow: 1
+        }
       }
+
     ]
 
   });
