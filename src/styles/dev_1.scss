@@ -715,11 +715,13 @@ a {
   .item {
     display: flex;
     margin-bottom: 50px;
+    margin-left: 110px;
+    margin-right: 130px;
 
     &-img {
       width: 766px;
       height: 537px;
-      margin-left: 110px;
+      margin-left: 0px;
 
       img {
         width: 100%;
@@ -729,7 +731,6 @@ a {
 
     &-text {
       width: 664px;
-      height: 418px;
       margin-left: 50px;
       margin-top: 60px;
 
@@ -754,10 +755,11 @@ a {
 
   .reverse {
     flex-direction: row-reverse;
-
+    margin-left: 130px;
+    margin-right: 110px;
     .item-img {
       margin-left: 0;
-      margin-right: 110px;
+      margin-right: 0px;
     }
 
     .item-text {

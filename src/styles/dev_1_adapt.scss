@@ -165,6 +165,34 @@ section{
 		}
 	}
 
+	/*end section services*/
+
+	/*begin section credit*/
+
+	.credit{
+		.section-tittle h2{
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		.item-img{
+			height: 423px;
+		}
+		.item-text{
+			margin-left: 40px;
+		}
+		.item-text h4{
+			font-size: 23px;
+			line-height: 26px;
+		}
+		.item-text p{
+			font-size: 15px;
+			line-height: 26px;
+			min-height: 150px;
+			margin-top: 25px;
+			margin-bottom: 30px;
+		}
+	}
+
 }
 @media screen and (max-width: 1366px) {
 	.header{
@@ -321,6 +349,9 @@ section{
 
 
 	.services{
+		.section-tittle h2{
+			padding-top: 30px;
+		}
 		.buttons{
 			right: 125px;
 		}
@@ -345,6 +376,46 @@ section{
 		&-slider li{
 			font-size: 14px;
 			line-height: 20px;
+		}
+	}
+
+	/*end section services*/
+
+	/*begin credit section*/
+
+	.credit{
+		.section-tittle h2{
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		.item{
+			margin-left: 90px;
+			margin-right: 110px;
+		}
+		.item-img{
+			height: 365px;
+		}
+		.item-text{
+			margin-top: 50px;
+			margin-left: 35px;
+		}
+		.item-text h4{
+			font-size: 22px;
+			line-height: 24px;
+			margin-bottom: 5px;
+		}
+		.item-text svg{
+			width: 80px;
+		}
+		.item-text p{
+			line-height: 21px;
+			height: 120px;
+			min-height: 20px;
+			margin-top: 15px;
+		}
+		.reverse{
+			margin-left: 110px;
+			margin-right: 90px;
 		}
 	}
 }
@@ -447,6 +518,7 @@ section{
 	.services{
 		.buttons{
 			right: 95px;
+			top: 68px;
 		}
 		&-slider{
 			margin: 40px 80px 0
@@ -458,6 +530,23 @@ section{
 			line-height: 18px;
 		}
 	}
+
+	/* end services section styles*/
+
+	/*begin credit section styles*/
+
+	.credit{
+		.item-img{
+			height: 336px;
+		}
+		.item-text{
+			margin-top: 40px;
+		}
+	}
+
+	/*end credit section styles*/
+
+
 }
 @media screen and (max-width: 1024px) {
 	.header{
@@ -662,6 +751,10 @@ section{
 	/*section services styles*/
 
 	.services{
+		.section-tittle h2{
+			padding-top: 20px;
+			margin-bottom: 20px;
+		}
 		.buttons{
 			width: 90px;
 		}
@@ -682,6 +775,28 @@ section{
 		.slider-item-text li{
 			font-size: 12px;
 			line-height: 14px;
+		}
+	}
+
+	/*end section services styles*/
+
+	/*begin section credit styles*/
+
+	.credit{
+		.section-tittle h2{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.item{
+			margin-left: 60px;
+			margin-right: 70px;
+		}
+		.item-img{
+			height: 277px;
+		}
+		.reverse{
+			margin-left: 70px;
+			margin-right: 60px;
 		}
 	}
 }
