@@ -263,6 +263,44 @@ section{
 
 	/*end client section*/
 
+	/*footer styles*/
+
+	.footer{
+		width: 89.583%;
+		&-content{
+			padding-bottom: 0;
+			padding-top: 60px;
+		}
+		.item{
+			margin-right: 30px;
+			width: 205px;
+			.item-tittle{
+				margin-bottom: 15px;
+			}
+			h3{
+				font-size: 14px;
+			}
+		}
+		.item:nth-of-type(4){
+			margin-right: 0;
+		}
+		&-list{
+			li{
+				font-size: 12px;
+				line-height: 23px;
+			}
+		}
+		&-menu{
+			width: 150px;
+			a{
+				font-size: 14px;
+			}
+		}
+		&-copyright{
+			padding: 20px 110px;
+		}
+	}
+
 }
 @media screen and (max-width: 1366px) {
 	.header{
@@ -1630,6 +1668,7 @@ section{
 	/*begin client section*/
 
 	.client{
+		min-height: 315px;
 		&-dots{
 			top: 55px;
 		}

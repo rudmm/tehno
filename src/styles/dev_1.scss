@@ -908,7 +908,7 @@ a {
 .footer {
   margin-left: 10.417%;
   width: 1700px;
-
+  position: relative;
   &-content {
     padding: 70px 110px;
     display: flex;
@@ -917,12 +917,13 @@ a {
 
   .item {
     margin-right: 55px;
-
+    .item-tittle{
+      margin-bottom: 25px;
+    }
     h3 {
       font-size: 16px;
       color: #646464;
       text-transform: uppercase;
-      margin-bottom: 25px;
     }
   }
 
@@ -944,6 +945,11 @@ a {
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #E04A38;
+      transition: color .5s;
+    }
+    a:hover{
+      color: $colorBlack;
+      transition: color .5s;
     }
 
     .menu-item {
@@ -991,6 +997,7 @@ a {
   &-copyright {
     display: flex;
     padding: 37px 110px;
+    background: #F8FAFC;
     justify-content: space-between;
 
     &-element {
