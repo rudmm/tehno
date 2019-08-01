@@ -591,6 +591,66 @@ section{
 	}
 
 	/*end client section*/
+
+	/*footer styles*/
+
+	.footer{
+		&-content{
+		}
+		.item{
+			.item-tittle{
+				margin-bottom: 10px;
+			}
+			h3{
+				font-size: 11px;
+			}
+		}
+		&-list{
+			li{
+				font-size: 10px;
+				line-height: 20px;
+			}
+		}
+		&-menu{
+			.menu-item{
+				margin-bottom: 20px;
+			}
+			a{
+				font-size: 12px;
+			}
+		}
+		&-logo{
+			width: 165px;
+			height: 80px;
+		}
+		&-logo-body{
+			margin-bottom: 15px;
+			width: 120px;
+			display: inline-block;
+			float: right;
+			svg{
+				height: 20px;
+				width: 120px;
+				float: right;
+			}
+		}
+		&-logo-social{
+			float: right;
+			margin-right: -7px;
+			svg{
+				height: 40px;
+			}
+			.social-fb{
+				margin-right: 0;
+			}
+		}
+		&-copyright{
+			&-element{
+				font-size: 13px;
+				line-height: 20px;
+			}
+		}
+	}
 }
 @media screen and (max-width: 1280px) {
 	/* header styles*/
@@ -727,6 +787,19 @@ section{
 		}
 		&-post{
 			right: 60px;
+		}
+	}
+
+	/*end section client*/
+
+	/*footer styles*/
+
+	.footer{
+		&-content{
+			padding: 30px 60px 0;
+		}
+		&-copyright{
+			padding: 20px 60px;
 		}
 	}
 
@@ -1079,6 +1152,61 @@ section{
 	}
 
 	/*end client section*/
+
+	/*footer styles*/
+
+	.footer{
+		&-content{
+			padding: 20px 40px 0;
+		}
+		.item{
+			.item-tittle{
+				margin-bottom: 7px;
+			}
+			h3{
+				font-size: 9px;
+			}
+		}
+		&-list{
+			li{
+				font-size: 8px;
+				line-height: 17px;
+			}
+		}
+		&-menu{
+			height: auto;
+			.menu-item{
+				margin-bottom: 10px;
+			}
+			a{
+				font-size: 11px;
+			}
+		}
+		&-logo{
+		}
+		&-logo-body{
+			width: 100px;
+			margin-bottom: 0;
+			svg{
+				height: 17px;
+				width: 100px;
+			}
+		}
+		&-logo-social{
+			margin-right: -4px;
+			svg{
+				height: 30px;
+				width: 30px;
+			}
+		}
+		&-copyright{
+			padding: 15px 40px;
+			&-element{
+				font-size: 11px;
+				line-height: 15px;
+			}
+		}
+	}
 }
 @media screen and (max-width: 992px) {
 	/*header styles*/
@@ -1523,6 +1651,29 @@ section{
 	}
 
 	/*end client section*/
+
+	/*footer styles*/
+
+	.footer{
+		&-content{
+			padding: 10px 20px 0;
+		}
+		.item{
+			display: none;
+		}
+		&-menu{
+			width: 100%;
+			&-list{
+				display: flex;
+				justify-content: space-between;
+				height: 100%;
+				align-items: center;
+			}
+		}
+		&-logo{
+			height: 60px;
+		}
+	}
 }
 @media screen and (max-width: 666px) {
 	.header{
