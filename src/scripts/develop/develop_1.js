@@ -155,7 +155,14 @@ function fancyBoxText(){
   let btnCredit = $('.credit .btn').fancybox({
   });
 }
-
+function clickBtnOpenMenu(){
+  let btn = $('.menu-open-btn');
+  let menu = $('.menu-opacity-block');
+  btn.click(function(){
+    $(this).toggleClass('open');
+    menu.slideToggle();
+  });
+}
 $(document).ready(function() {
   topSectionSlider();
   openCloseServicesWindow();
@@ -163,6 +170,7 @@ $(document).ready(function() {
   sectionClientSlider();
   showListSlider();
   fancyBoxText();
+  clickBtnOpenMenu();
 });
 $(window).load(function() {});
 
