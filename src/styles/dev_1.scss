@@ -178,6 +178,8 @@ a {
   }
 }
 /*end header*/
+
+
 /*form styles validate*/
 .error {
   border: 1px solid #f00;
@@ -335,36 +337,63 @@ a {
     .item {
       position: relative;
 
-      &-text h2 {
-        font-size: 36px;
-        line-height: 46px;
-        text-transform: uppercase;
-        color: #000;
+      &-text-tittle {
         margin: 0 0 20px;
         text-align: left;
+        h1,h2,h3,h4,h5,h6{
+          font-size: 36px;
+          line-height: 46px;
+          text-transform: uppercase;
+          color: $colorBlack;
+        }
       }
 
-      &-text p {
+      &-text-p {
         margin: 0;
+        margin-bottom: 100px;
+        padding-bottom: 5px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
         font-size: 18px;
         line-height: 23px;
         color: $colorWhite;
-        max-width: 370px;
-        margin-bottom: 100px;
-        padding-bottom: 5px;
-      }
+        p{
 
-      &-line {
-        position: absolute;
-        bottom: -23px;
-        opacity: 0;
-        transition: opacity 0.5s;
-      }
-    }
+          max-width: 370px;
+          display: inline-block;
+        }
+        .item-pic{
+          display: inline-block;
+          height: auto;
+          background-color: $colorWhite;
+          width: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: -5px;
+          opacity: 0;
+          transition: all .5s;
+        }
+        .item-pic:after{
+          content: "";
+          display: block;
+          width: 95%;
+          height: 1px;
+          background-color: $colorWhite;
+          position: absolute;
+          bottom: 0;
+          left: 0;
 
-    .item:hover .item-line {
-      opacity: 1;
-      transition: opacity 0.5s;
+        }
+      }
+      &-text-p:hover{
+        .item-pic{
+          transition: all .5s;
+          opacity: 1;
+        }
+      }
     }
   }
 

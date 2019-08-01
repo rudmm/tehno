@@ -26,10 +26,8 @@
 		&-menu {
 			height: 1200px;
 
-			.item-text {
-				p {
+			.item-text-p {
 					margin-bottom: 70px;
-				}
 			}
 		}
 
@@ -77,27 +75,26 @@ section{
 	/*begin top section */
 
 	.top{
-		.list-block .item-text h2{
-			font-size: 28px;
-			line-height: 41px;
-		}
+
 		&-menu{
 			padding-left: 40px;
 			height: 1055px;
+			.item {
+	      &-text-tittle {
+	        h1,h2,h3,h4,h5,h6{
+						font-size: 28px;
+						line-height: 41px;
+	        }
+	      }
+
+	      &-text-p {
+					font-size: 16px;
+					line-height: 20px;
+					margin-bottom: 55px;
+	      }
+	    }
 		}
-		.list-block .item-text p{
-			font-size: 16px;
-			line-height: 20px;
-			margin-bottom: 55px;
-			max-width: 320px;
-		}
-		.item-line{
-			width: 320px;
-			bottom: -27px;
-		}
-		.item-line svg{
-			width: 360px;
-		}
+
 		.top-slider-slick{
 			height: 891px;
 			.item{
@@ -105,7 +102,8 @@ section{
 			}
 		}
 		.top-slider-button{
-			bottom: 85px;
+
+			bottom: 70px;
 		}
 
 	}
@@ -382,22 +380,21 @@ section{
 			padding-left: 30px;
 			padding-top: 140px;
 			height: 910px;
-		}
-		.list-block .item-text{
-			h2{
-				font-size: 25px;
-				line-height: 35px;
-				margin-bottom: 15px;
-			}
-			p{
-				font-size: 15px;
-				line-height: 18px;
-				margin-bottom: 47px;
-				max-width: 280px;
-			}
-		}
-		.item-line svg{
-			width: 310px;
+			.item {
+	      &-text-tittle {
+					margin-bottom: 15px;
+	        h1,h2,h3,h4,h5,h6{
+						font-size: 25px;
+						line-height: 35px;
+	        }
+	      }
+
+	      &-text-p {
+					font-size: 15px;
+					line-height: 18px;
+					margin-bottom: 42px;
+	      }
+	    }
 		}
 		.top-slider-slick{
 			height: 768px;
@@ -658,6 +655,11 @@ section{
 		.menu-logo{
 			margin-bottom: 50px;
 		}
+		.menu-list-item{
+			svg{
+				height: 10px;
+			}
+		}
 		.menu-contacts{
 			top: 235px;
 		}
@@ -689,9 +691,24 @@ section{
 		.top-menu{
 			padding-top: 120px;
 			height: 845px;
-		}
-		.list-block .item-text p {
-			margin-bottom: 37px;
+			.item {
+	      &-text-tittle {
+	        h1,h2,h3,h4,h5,h6{
+						font-size: 26px;
+						line-height: 35px;
+	        }
+	      }
+
+	      &-text-p {
+					font-size: 14px;
+					line-height: 18px;
+					margin-bottom: 37px;
+					.item-pic{
+						display: none;
+					}
+	      }
+
+	    }
 		}
 		&-list{
 			right: 70px;
@@ -813,16 +830,19 @@ section{
 			width: 80px;
 		}
 		.menu-list-item{
-			padding-left: 10px;
+			padding-left: 15px;
 			padding-bottom: 10px;
 			padding-top: 10px;
 		}
 		.menu-list-item a{
 			font-size: 14px;
+			svg{
+				height: 10px;
+			}
 		}
 		.menu-contacts{
-			margin-left: 10px;
-			top: 245px;
+			margin-left: 15px;
+			top: 250px;
 		}
 		.menu .menu-contacts-tel{
 			font-size: 11px;
@@ -934,28 +954,27 @@ section{
 		.top-menu{
 			padding-top: 60px;
 			height: 675px;
+			.item {
+	      &-text-tittle {
+	        h1,h2,h3,h4,h5,h6{
+						font-size: 20px;
+			 			line-height: 28px;
+			 			margin-bottom: 10px;
+	        }
+	      }
+
+	      &-text-p {
+					font-size: 13px;
+					line-height: 17px;
+					margin-bottom: 20px;
+	      }
+	    }
 		}
 		.top-menu-dots{
 			height: 10px;
 		}
-	 .list-block .item-text{
-		 h2{
- 			font-size: 20px;
- 			line-height: 28px;
- 			margin-bottom: 10px;
- 		}
-		p{
-			font-size: 13px;
-			line-height: 17px;
-			max-width: 190px;
-			margin-bottom: 20px;
-		}
-	 }
-	 .list-block .item-line{
-		 bottom: -40px;
-	 }
-	 .list-block .item-line svg{
-		 width: 220px;
+	 .top-slider-button{
+		 bottom: 50px;
 	 }
 	}
 
@@ -1212,7 +1231,10 @@ section{
 	/*header styles*/
 	.header{
 		.menu-contacts{
-			top: 210px;
+			top: 230px;
+			.menu-contacts-tel a{
+				margin-bottom: 10px;
+			}
 		}
 		.menu1-services{
 			height: 550px;
@@ -1262,7 +1284,29 @@ section{
 	.top{
 		.top-menu{
 			height: 650px;
+			.item {
+	      &-text-tittle {
+	        h1,h2,h3,h4,h5,h6{
+						font-size: 20px;
+			 			line-height: 24px;
+			 			margin-bottom: 10px;
+	        }
+	      }
+
+	      &-text-p {
+					font-size: 13px;
+					line-height: 17px;
+					margin-bottom: 15px;
+	      }
+
+	    }
+			&-dots{
+				height: 20px;
+			}
 		}
+		.top-slider-button{
+ 		 bottom: 50px;
+ 	 }
 		.top-form{
 			.contact-form-tittle h1{
 				font-size: 40px;
@@ -1279,14 +1323,6 @@ section{
 		}
 		.top-slider-slick .item{
 			height: 550px;
-		}
-		.list-block .item-text{
-			h2{
-				line-height: 24px;
-			}
-			p{
-				margin-bottom: 15px;
-			}
 		}
 	}
 	/*end top section*/
@@ -1359,7 +1395,7 @@ section{
 	/*end client section*/
 
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 	.header{
 		.menu-logo{
 			margin: 10px 0;
@@ -1690,6 +1726,7 @@ section{
 		}
 		.menu-contacts{
 			top: 225px;
+			margin-left: 7px;
 		}
 		.menu .menu-contacts-tel{
 			font-size: 7px;
@@ -1740,7 +1777,7 @@ section{
 		.top-slider-button{
 			width: 65px;
 			right: 30px;
-			bottom: 135px;
+			bottom: 160px;
 		}
 		.top-list-item{
 			margin-left: 10px;
@@ -1749,7 +1786,7 @@ section{
 			font-size: 11px;
 		}
 		.top-form{
-			top: 125px;
+			top: 140px;
 			.contact-form-tittle h1{
 				font-size: 30px;
 				line-height: 35px;
@@ -1770,7 +1807,7 @@ section{
 		}
 		.list-block .item .top-menu-dots{
 			left: -575px;
-			top: -45px;
+			top: -60px;
 		}
 	}
 
@@ -1865,5 +1902,24 @@ section{
 
 	/*end client section*/
 }
-@media screen and (max-width: 479px) {}
+@media screen and (max-width: 480px) {
+	.header{
+		.menu{
+			width: 100vh;
+			height: auto;
+			&-logo{
+				display: inline-block;
+				width: 100px;
+				text-align: left;
+				padding-left: 10px;
+			}
+			&-list{
+				display: none;
+			}
+			&-contacts{
+				display: none;
+			}
+		}
+	}
+}
 @media screen and (max-width: 320px) {}
