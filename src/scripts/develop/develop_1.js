@@ -1,4 +1,11 @@
 function topSectionSlider() {
+  let clinetWidth = $(window).innerWidth();
+  let dots;
+  if(clinetWidth<992){
+    dots = $('.top-slider-dots-mobile');
+  }else{
+    dots = $('.top-menu-dots');
+  }
   $('.top-slider-slick').slick({
     Infinity: true,
     dots: true,
@@ -6,7 +13,7 @@ function topSectionSlider() {
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 1000,
-    appendDots: $('.top-menu-dots'),
+    appendDots: dots,
     prevArrow: $('.slide-prev'),
     nextArrow: $('.slide-next')
   });
@@ -53,7 +60,7 @@ function sectionServicesSlider() {
         }
       },
       {
-        breakpoint: 767,
+        breakpoint: 769,
         settings:{
           slidesToShow: 2
         }
@@ -61,7 +68,7 @@ function sectionServicesSlider() {
       {
         breakpoint: 666,
         settings:{
-          slidesToShow: 1
+          slidesToShow: 1,
         }
       }
 
@@ -91,7 +98,8 @@ let animateSectionNumber = function() {
   let blockTop = $('.number-top');
   let blockBottom = $('.number-bottom');
   let positionBottom = block.offset().top + block.height();
-  if (scroll + $(window).height() > positionBottom && scroll < positionBottom) {
+  let widthWindow = $(window).innerWidth();
+  if (scroll + $(window).height() > positionBottom && scroll < positionBottom && widthWindow>1024) {
     blockTop.addClass('animate');
     blockBottom.addClass('animate');
   } else {
@@ -157,10 +165,12 @@ function fancyBoxText(){
 }
 function clickBtnOpenMenu(){
   let btn = $('.menu-open-btn');
-  let menu = $('.menu-opacity-block');
+  let opacity = $('.menu-opacity-block');
+  let menuClose = $('.menu1-content-close');
   btn.click(function(){
     $(this).toggleClass('open');
-    menu.slideToggle();
+    opacity.slideToggle();
+    menuClose.click();
   });
 }
 $(document).ready(function() {

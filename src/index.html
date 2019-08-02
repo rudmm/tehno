@@ -10,18 +10,65 @@
       <!-- begin topsection-->
 
       <section class="top">
-        <div class="top-slider-slick">
-          <div class="item">
-            <img src="img/image8.jpg" alt="" class="item-img">
-          </div>
-          <div class="item">
-            <img src="img/image2.jpg" alt="" class="item-img">
-          </div>
-          <div class="item">
-            <img src="img/image1.jpg" alt="" class="item-img">
+        <div class="slider-components">
+            <div class="top-slider-slick">
+                <div class="item">
+                  <img src="img/image8.jpg" alt="" class="item-img">
+                </div>
+                <div class="item">
+                  <img src="img/image8.jpg" alt="" class="item-img">
+                </div>
+                <div class="item">
+                  <img src="img/image8.jpg" alt="" class="item-img">
+                </div>
+              </div>
+              <div class="top-slider-dots-mobile">
+                <!--slider dots mobile-->
+              </div>
+              <div class="top-slider-button">
+                <div class="slide-prev">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-3.49691e-07 7L8.25 0.0717961L8.25 13.9282L-3.49691e-07 7Z" fill="#fff" />
+                  </svg>
+      
+                </div>
+                <div class="slide-next">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg">
+                    <path d="M9 7L0.75 13.9282L0.750001 0.0717965L9 7Z" fill="#fff" />
+                  </svg>
+                </div>
+              </div>
+        </div>
+        
+        <div class="top-form" id="topsection-form">
+          <form action="ajax.php" method="post" class="contact-form">
+            <div class="contact-form-tittle">
+              <h1>масштабируем<br>ваши возможности</h1>
+            </div>
+            <div class="contact-form-row cfix">
+              <div class="contact-form-item">
+                <div class="contact-form-item-input form_row">
+                  <div class="form_input">
+                    <input type="text" placeholder="Введите имя" required="required" name="contact_name" class="btn top-form-input">
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form-item">
+                <div class="contact-form-item-input form_row">
+                  <div class="form_input">
+                    <input type="tel" placeholder="Телефон" required="required" name="contact_tel" value="" class="btn top-form-input tel-mask">
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form-item">
+                <button type="submit" class="btn top-form-btn contact-submit">Оставить заявку</button>
+              </div>
+            </div>
+          </form>
+          <div class="form-text">
+            <span>Отправляя форму, Вы соглашаетесь на политику обработки персональных данных.</span>
           </div>
         </div>
-
 
         <div class="top-menu">
           <div class="list-block">
@@ -100,48 +147,8 @@
           <li class="top-list-item"><a href="#">Налоговый консалтинг</a></li>
           <li class="top-list-item"><a href="#">Аудиторские услуги</a></li>
         </ul>
-        <div class="top-form" id="topsection-form">
-          <form action="ajax.php" method="post" class="contact-form">
-            <div class="contact-form-tittle">
-              <h1>масштабируем<br>ваши возможности</h1>
-            </div>
-            <div class="contact-form-row cfix">
-              <div class="contact-form-item">
-                <div class="contact-form-item-input form_row">
-                  <div class="form_input">
-                    <input type="text" placeholder="Введите имя" required="required" name="contact_name" class="btn top-form-input">
-                  </div>
-                </div>
-              </div>
-              <div class="contact-form-item">
-                <div class="contact-form-item-input form_row">
-                  <div class="form_input">
-                    <input type="tel" placeholder="Телефон" required="required" name="contact_tel" value="" class="btn top-form-input tel-mask">
-                  </div>
-                </div>
-              </div>
-              <div class="contact-form-item">
-                <button type="submit" class="btn top-form-btn contact-submit">Оставить заявку</button>
-              </div>
-            </div>
-          </form>
-          <div class="form-text">
-            <span>Отправляя форму, Вы соглашаетесь на политику обработки персональных данных.</span>
-          </div>
-        </div>
-        <div class="top-slider-button">
-          <div class="slide-prev">
-            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M-3.49691e-07 7L8.25 0.0717961L8.25 13.9282L-3.49691e-07 7Z" fill="#fff" />
-            </svg>
-
-          </div>
-          <div class="slide-next">
-            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg">
-              <path d="M9 7L0.75 13.9282L0.750001 0.0717965L9 7Z" fill="#fff" />
-            </svg>
-          </div>
-        </div>
+        
+        
       </section>
 
       <!-- end topsection-->
