@@ -820,8 +820,7 @@ a {
 .fancybox-slide {
   max-width  : 50%;
   margin: 0 auto;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 25%;
 }
 /* begin sectionCredit*/
 .credit {
@@ -1024,11 +1023,10 @@ a {
 /* end client section */
 /* begin footer styles*/
 .footer {
+  width: auto;
   position: relative;
-
+  margin-left: 10.417%;
   &-content {
-    margin-left: 10.417%;
-    width: 1700px;
     padding: 70px 110px;
     display: flex;
     margin-right: 0;
@@ -1114,8 +1112,6 @@ a {
   }
 
   &-copyright {
-    margin-left: 10.417%;
-    width: 1700px;
     display: flex;
     padding: 37px 110px;
     background: #f8fafc;

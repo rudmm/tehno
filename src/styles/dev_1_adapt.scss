@@ -340,8 +340,6 @@
 	/*end client section*/
 	/*footer styles*/
 	.footer {
-		width: 89.583%;
-
 		&-content {
 			padding-bottom: 0;
 			padding-top: 60px;
@@ -560,12 +558,14 @@
 		}
 
 		.buttons {
-			right: 125px;
+			right: 90px;
 			top: 70px;
 		}
 
 		&-slider {
 			min-height: 500px;
+			margin-left: 75px;
+			margin-right: 75px;
 		}
 
 		.slider-item {
@@ -602,7 +602,7 @@
 
 		.item {
 			margin-left: 90px;
-			margin-right: 110px;
+			margin-right: 90px;
 		}
 
 		.item-img {
@@ -643,7 +643,7 @@
 	/*end credit section*/
 	/*begin company section*/
 	.company {
-		padding: 30px 50px;
+		padding: 30px 90px;
 
 		.section-tittle h2 {
 			margin-bottom: 30px;
@@ -664,6 +664,7 @@
 
 		.buttons {
 			top: 76px;
+			right: 90px;
 		}
 
 		.slider-client {
@@ -680,6 +681,7 @@
 			width: 550px;
 			top: 140px;
 			height: 403px;
+			right: 90px;
 		}
 
 		&-post-item {
@@ -710,7 +712,8 @@
 	/*footer styles*/
 	.footer {
 		.footer-content{
-			padding-left: 60px;
+			padding-left: 90px;
+			padding-right: 90px;
 		}
 		.item {
 			.item-tittle {
@@ -771,7 +774,8 @@
 		}
 
 		&-copyright {
-			padding-left: 60px;
+			padding-left: 90px;
+			padding-right: 90px;
 			&-element {
 				font-size: 13px;
 				line-height: 20px;
@@ -919,31 +923,31 @@
 	/*begin section services*/
 	.services {
 		.buttons {
-			right: 95px;
+			right: 60px;
 			top: 68px;
 		}
 
 		&-slider {
-			margin: 40px 80px 0;
-		}
-
-		&-slider h3 {
-			font-size: 17px;
-		}
-
-		&-slider li {
-			line-height: 18px;
+			margin: 40px 45px 0;
 		}
 	}
 	/* end services section styles*/
 	/*begin credit section styles*/
 	.credit {
-
+		.item{
+			margin-left: 60px;
+			margin-right: 60px;
+		}
 		.item-text {
 			margin-top: 40px;
 		}
 	}
 	/*end credit section styles*/
+
+	/*begin company*/
+	.company{
+		padding: 30px 60px;
+	}
 	/*begin section client*/
 	.client {
 		.buttons {
@@ -957,12 +961,16 @@
 	/*end section client*/
 	/*footer styles*/
 	.footer {
-		&-content {
+		.footer-content {
 			padding: 30px 60px 0;
+			padding-left: 60px;
+			padding-right: 60px;
 		}
 
 		&-copyright {
 			padding: 20px 60px;
+			padding-left: 60px;
+			padding-right: 60px;
 		}
 	}
 }
@@ -1120,9 +1128,8 @@
 				}
 
 				&-text-p {
-					font-size: 13px;
 					line-height: 17px;
-					margin-bottom: 20px;
+					margin-bottom: 10px;
 				}
 			}
 		}
@@ -1241,7 +1248,7 @@
 	/*end credit section style*/
 	/*begin company section style*/
 	.company {
-		padding: 20px 40px;
+		padding: 20px 45px;
 
 		.section-tittle h2 {
 			margin-bottom: 20px;
@@ -1270,7 +1277,7 @@
 			width: 90px;
 			height: 40px;
 			top: 60px;
-			right: 40px;
+			right: 45px;
 		}
 
 		.slider-client {
@@ -1283,7 +1290,7 @@
 		}
 
 		&-post {
-			right: 40px;
+			right: 45px;
 			height: 290px;
 			width: 460px;
 			top: 120px;
@@ -1325,23 +1332,17 @@
 	/*footer styles*/
 	.footer {
 		.footer-content {
-			padding: 20px 40px 0;
-			padding-left: 40px;
+			padding: 20px 45px 0;
+			padding-left: 45px;
 			display: flex;
 			justify-content: space-between;
-		}
-		.footer-menu{
-			flex-basis: 800px;
-			padding-top: 15px;
 		}
 		.footer-menu-list{
-			display: flex;
-			justify-content: space-between;
 			.menu-item{
-				margin-bottom: 0;
+				margin-bottom: 15px;
 			}
 			.menu-item a {
-				font-size: 15px;
+				font-size: 17px;
 			}
 		}
 		.item {
@@ -1367,7 +1368,7 @@
 		}
 
 		&-copyright {
-			padding: 15px 40px;
+			padding: 15px 45px;
 		}
 	}
 }
@@ -1440,17 +1441,31 @@
 				}
 			}
 			.menu1-services{
-				width: auto;
+				width: 100vw;
 				margin-left: 0;
 				top: 195px;
 				height: 247px;
-				left: 50%;
-				transform: translateX(-50%);
 				overflow-y: scroll;
 			}
 			.menu1-services-content{
 				padding-top: 40px;
 				padding-left: 5%;
+				.menu1-content-close{
+					font-size: 16px;
+				}
+				.menu1-content-block{
+					width: 50%;
+					.menu1-content-block-p h3{
+						font-size: 20px;
+						margin-bottom: 10px;
+					}
+					.menu1-content-block-p li{
+						font-size: 17px;
+					}
+					.menu1-content-block-p svg{
+						height: 20px;
+					}
+				}
 			}
 		}
 	}
@@ -1536,14 +1551,8 @@
 	/*begin number section*/
 
 	.number{
-		&-content{
-			.number-top.animate {
-	      transform: translateX(-10px);
-	    }
-
-	    .number-bottom.animate {
-	      transform: translateX(10px);
-	    }
+		.number-block{
+			width: 455px;
 		}
 	}
 
@@ -1559,6 +1568,12 @@
 		}
 	}
 	/*end services section*/
+	.credit{
+		.item{
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+	}
 	/*begin client section*/
 	.client {
 		min-height: 430px;
@@ -1639,6 +1654,7 @@
 			}
 			.menu-list{
 				height: 70vh;
+				padding: 16% 0;
 			}
 			.menu-list-item a{
 				font-size: 30px;
@@ -1669,24 +1685,27 @@
 	/*begin number styles*/
 
 	.number{
+		.number-content{
+			margin-left:30px;
+		}
 		.number-top, .number-bottom{
 			flex-wrap: wrap;
-			justify-content: center;
 			margin-bottom: 0;
 		}
 		.number-block{
-			flex-basis: 500px;
-			height: 100px;
+			flex-basis: 650px;
+			height: 130px;
 			margin-bottom: 20px;
 		}
 		.number-block-pic{
 			height: 100%;
-			width: 100px;
+			width: 20%;
 		}
 		.number-block-text{
-			width: auto
+			width: auto;
 			h4{
 				font-size: 20px;
+				margin-bottom: 20px;
 			}
 			p{
 				font-size: 18px;
@@ -1698,7 +1717,12 @@
 	/*begin services */
 
 	.services{
+		.buttons{
+			right: 30px;
+		}
 		&-slider{
+			margin-left: 15px;
+			margin-right: 15px;
 			.slider-item-text{min-height: 275px;
 				h3{
 					font-size: 19px;
@@ -1720,9 +1744,52 @@
 		.item{
 			display: flex;
 			flex-wrap: wrap;
+			margin-left: 30px;
+			margin-right: 30px;
 		}
 		.item-text{
 			margin-left :0;
+			h4{
+				font-size: 24px;
+			}
+			p{
+				font-size: 19px;
+			}
+			.btn{
+				font-size: 15px;
+			}
+		}
+	}
+
+	/*company*/
+
+	.company{
+		padding: 20px 30px;
+	}
+
+	/*client section*/
+	.client{
+		.buttons{
+			right: 30px;
+		}
+		.client-post{
+			right: 30px;
+		}
+	}
+
+	/*footer*/
+
+	.footer{
+		.footer-content{
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		.footer-copyright{
+			padding-left: 30px;
+			padding-right: 30px;
+			&-element{
+				font-size: 15px;
+			}
 		}
 	}
 }
@@ -1789,10 +1856,18 @@
 	/*begin credit*/
 
 	.credit{
-		.credit-list .item{
-			margin-left: 20px;
-			margin-right: 20px;
+		.item .item-text{
+			h4{
+				font-size: 21px;
+			}
+			p{
+				font-size: 15px;
+			}
+			.btn{
+				font-size: 13px;
+			}
 		}
+		
 	}
 
 	/*end credit section styles*/
@@ -1811,6 +1886,19 @@
 		.menu .menu1-services{
 			top: 29.5%;
 		}
+		.menu .menu1-services{
+			.menu1-content-block .menu1-content-block-p{
+				h3{
+					font-size: 14px;
+				}
+				svg{
+					height: 10px;
+				}
+				li{
+					font-size: 14px;
+				}
+			}
+		}
 		.menu .menu-open-btn{
 			margin-right: 20px;
 		}
@@ -1823,10 +1911,10 @@
 		height: 0;	
 	}
 	#contact_name-error{
-		top: 110px;
+		top: 115px;
 	}
 	#contact_tel-error{
-		top: 165px;
+		top: 175px;
 	}
 
 	/*slick btn styles*/
@@ -1848,6 +1936,12 @@
 			line-height: 23px;
 		}
 	}
+
+	/*btn styles*/
+	.btn{
+		width: 190px;
+		height: 40px;
+	}
 	/*begin top section styles*/
 
 	.top{
@@ -1858,7 +1952,7 @@
 		.top-form{
 			.contact-form-row{
 				flex-direction: column;
-				width: 120px;
+				width: 190px;
 				margin-left: auto;
 			}
 			.form-input{
@@ -1890,21 +1984,56 @@
 	}
 
 	/*end top section*/
+	.number{
+		.number-content{
+			margin-left: 20px;
+		}
+		.number-block{
+			height: 75px;
+			margin-right: 0;
+			flex-basis: 430px;
+		}
+		.number-block-text{
+			h4{
+				font-size: 17px;
+				margin-bottom: 0;
+			}
+			p{
+				font-size: 14px;
+			}
+		}
+	}
 
 	/*begin services section*/
 
 	.services{
+		.services-slider{
+			margin-left: 10px;
+			margin-right: 10px;
+			.slider-item{
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
 		.buttons{
 			width: 65px;
 			height: 30px;
-		}
-		.btn{
-			width: 150px;
-			height: 40px;
+			right: 20px;
 		}
 	}
 
 	/*end services section*/
+
+	.credit{
+		.item{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+
+	.company{
+		padding: 20px;
+	}
 
 	/*begin client section*/
 
@@ -1912,7 +2041,7 @@
 		.buttons{
 			width: 65px;
 			height: 30px;
-			right: 10px;
+			right: 20px;
 		}
 		.client-dots, .buttons{
 			z-index: 5;
@@ -1925,8 +2054,8 @@
 			}
 		}
 		.client-post{
-			right: 10px;
-			max-width: 90vw;
+			left: 20px;
+			max-width: 92vw;
 		}
 		.client-post-item{
 			height: auto;
@@ -1934,8 +2063,11 @@
 		.item-text{
 			padding-left: 10px;
 			h3{
-				font-size: 14px;
+				font-size: 16px;
 				line-height: 14px;
+			}
+			p{
+				font-size: 14px;
 			}
 		}
 		.item-img{
@@ -1949,7 +2081,7 @@
 
 	.footer{
 		.footer-content{
-			padding: 10px 10px 0;
+			padding: 20px 20px 0;
 			flex-wrap: wrap;
 		}
 		.footer-logo{
@@ -1962,9 +2094,12 @@
 			height: auto;
 		}
 		.footer-copyright{
-			padding: 10px;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
 			&-element{
-				font-size: 12px;
+				font-size: 16px;
+				margin-bottom: 10px;
 			}
 		}
 	}
@@ -1982,6 +2117,14 @@
 			.menu1-services{
 				top: 22.5%;
 			}
+			.menu1-services-content{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				.menu1-content-block{
+					flex-basis: 80%;
+				}
+			}
 		}
 	}
 
@@ -1994,9 +2137,21 @@
 				line-height: 24px;
 			}
 		}
+		.top-menu{
+			.list-block .item-text-p p{
+				max-width: 100%;
+			}
+		}
 	}
 
 	/*end top section*/
+
+	#contact_tel-error{
+		top: 165px;
+	}
+	#contact_name-error{
+		top: 100px;
+	}
 
 	/*section tittle style*/
 	.section-tittle{
@@ -2012,26 +2167,28 @@
 			margin-top: 10px;
 			margin-bottom: 10px;
 		}
-		&-content{
+		.number-content{
 			margin-bottom: 20px;
+			margin-left: 0;
+			width: 100%;
+			display: block;
+			padding-left: 20px;
 		}
 		.number-block{
 			flex-basis: 300px;
-			height: 50px;
 			.number-block-pic{
 				width: 50px;
+				height: 50px;
 			}
 			.number-block-text{
 				max-width: 250px;
 				height: auto;
 				padding: 5px;
 				h4{
-					font-size: 13px;
-					line-height: 14px;
+					font-size: 15px;
 				}
 				p{
-					font-size: 12px;
-					line-height: 13px;
+					font-size: 14px;
 				}
 			}
 		}
@@ -2043,7 +2200,7 @@
 	/*begin services section*/
 	.services{
 		.buttons{
-			right: 35px;
+			right: 20px;
 		}
 		&-slider{
 			margin: 20px 20px 0;
@@ -2061,6 +2218,11 @@
 		.credit-list .item{
 			margin-left: 20px;
 		}
+		.item .item-text{
+			h4{
+				font-size: 19px;
+			}	
+		}
 	}
 
 	/*end credit section*/
@@ -2075,7 +2237,7 @@
 	/*begin client section*/
 
 	.client{
-		min-height: 350px;
+		min-height: 430px;
 		.slider-client .item{
 			height: 260px;
 			img{
@@ -2084,13 +2246,13 @@
 		}
 		.item-text{
 			padding-left: 10px;
-			h3{
-				font-size: 11px;
-				line-height: 11px;
+			h3{	
 				margin-top: 5px;
+				margin-bottom: 10px;
 			}
 			p{
 				margin: 0;
+				margin-bottom: 10px;
 			}
 		}
 		.item-img{
@@ -2114,9 +2276,6 @@
 			display: inline-block;
 			margin-left: 0;
 			max-width: 45vw;
-		}
-		.footer-copyright-element{
-			font-size: 8px;
 		}
 	}
 }

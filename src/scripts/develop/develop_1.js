@@ -31,11 +31,22 @@ function openCloseServicesWindow() {
         parentIndex = menuList.index(parent);
           wServices = $(`.menu${parentIndex}-services`);
         if (wServices.length) {
-          wServices.fadeIn();
           parent.addClass('menu-list-item-open');
+          if($(window).innerWidth>992){
+            wServices.fadeIn();
+          }else{
+            wServices.slideToggle();
+            let top = parent.offset().top+parent.outerHeight();
+            wServices.css('top',top+'px');
+          }
           let close = $(`.menu${parentIndex}-content-close`);
           close.click(function() {
-            wServices.fadeOut();
+            if($(window).innerWidth>992){
+              wServices.fadeOut();
+            }else{
+              wServices.slideUp();
+            }
+           
             parent.removeClass('menu-list-item-open');
           });
         }
@@ -163,6 +174,7 @@ function closeListItem(list){
 
 function fancyBoxText(){
   let btnCredit = $('.credit .btn').fancybox({
+
   });
 }
 function clickBtnOpenMenu(){
