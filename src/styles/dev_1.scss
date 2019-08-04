@@ -1,8 +1,8 @@
 $colorWhite: #fff;
-$colorOrange: #FEBA03;
-$colorRed: #E04A38;
+$colorOrange: #feba03;
+$colorRed: #e04a38;
 $colorBlack: #000;
-$colorBrown: #1C0B05;
+$colorBrown: #1c0b05;
 
 h1,
 h2,
@@ -48,7 +48,7 @@ a {
       margin-top: 50px;
       margin-bottom: 100px;
     }
-    .menu-open-btn{
+    .menu-open-btn {
       display: none;
       width: 30px;
       height: 30px;
@@ -60,12 +60,12 @@ a {
       -moz-transform: rotate(0deg);
       -o-transform: rotate(0deg);
       transform: rotate(0deg);
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
+      -webkit-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
     }
-    .menu-open-btn span{
+    .menu-open-btn span {
       display: block;
       position: absolute;
       height: 6px;
@@ -78,10 +78,10 @@ a {
       -moz-transform: rotate(0deg);
       -o-transform: rotate(0deg);
       transform: rotate(0deg);
-      -webkit-transition: .25s ease-in-out;
-      -moz-transition: .25s ease-in-out;
-      -o-transition: .25s ease-in-out;
-      transition: .25s ease-in-out;
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
     }
     .menu-open-btn span:nth-child(1) {
       top: 1px;
@@ -180,7 +180,7 @@ a {
         font-weight: 700;
       }
     }
-    .menu-opent-btn{
+    .menu-opent-btn {
       display: none;
     }
     &1-services {
@@ -206,7 +206,7 @@ a {
         line-height: 30px;
         text-align: right;
         text-transform: uppercase;
-        color: #6A6A6A;
+        color: #6a6a6a;
         top: 40px;
         right: 40px;
         cursor: pointer;
@@ -222,7 +222,7 @@ a {
       .menu1-content-block-p h3 {
         font-size: 20px;
         line-height: 38px;
-        color: #FEBA03;
+        color: #feba03;
         text-transform: uppercase;
         margin: 0;
       }
@@ -242,7 +242,6 @@ a {
   }
 }
 /*end header*/
-
 
 /*form styles validate*/
 .error {
@@ -285,7 +284,7 @@ a {
   }
 
   &:focus::placeholder {
-    color: #E5E5E5;
+    color: #e5e5e5;
     transition: all 0.5s;
   }
 
@@ -320,7 +319,7 @@ a {
   width: 50px;
   height: 50px;
   border: none;
-  background: #BFBBBA;
+  background: #bfbbba;
   opacity: 0.5;
   z-index: 6;
   transition: background-color 0.5s;
@@ -347,7 +346,7 @@ a {
 
     button {
       border-radius: 50%;
-      background: #FFFFFF;
+      background: #ffffff;
       width: 10px;
       height: 10px;
       opacity: 0.5;
@@ -404,7 +403,12 @@ a {
       &-text-tittle {
         margin: 0 0 20px;
         text-align: left;
-        h1,h2,h3,h4,h5,h6{
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
           font-size: 36px;
           line-height: 46px;
           text-transform: uppercase;
@@ -423,12 +427,11 @@ a {
         font-size: 18px;
         line-height: 23px;
         color: $colorWhite;
-        p{
-
+        p {
           max-width: 370px;
           display: inline-block;
         }
-        .item-pic{
+        .item-pic {
           display: inline-block;
           height: auto;
           background-color: $colorWhite;
@@ -438,9 +441,9 @@ a {
           align-items: center;
           margin-bottom: -5px;
           opacity: 0;
-          transition: all .5s;
+          transition: all 0.5s;
         }
-        .item-pic:after{
+        .item-pic:after {
           content: "";
           display: block;
           width: 95%;
@@ -449,12 +452,11 @@ a {
           position: absolute;
           bottom: 0;
           left: 0;
-
         }
       }
-      &-text-p:hover{
-        .item-pic{
-          transition: all .5s;
+      &-text-p:hover {
+        .item-pic {
+          transition: all 0.5s;
           opacity: 1;
         }
       }
@@ -520,7 +522,7 @@ a {
     }
 
     &-input {
-      background: #FFFFFF;
+      background: #ffffff;
       opacity: 0.7;
 
       &:hover {
@@ -537,7 +539,7 @@ a {
       margin-top: 20px;
     }
   }
-  .top-slider-dots-mobile{
+  .top-slider-dots-mobile {
     display: none;
   }
   &-slider-button {
@@ -595,7 +597,7 @@ a {
       display: flex;
       transition: all 0.5s;
     }
-    .number-top{
+    .number-top {
       margin-bottom: 30px;
     }
 
@@ -682,7 +684,7 @@ a {
 }
 /*begin sectionservices*/
 .services {
-  background: #E5E5E5;
+  background: #e5e5e5;
   position: relative;
 
   h2 {
@@ -741,18 +743,18 @@ a {
       ul {
         margin-bottom: 60px;
       }
-      .btn{
+      .btn {
         opacity: 0;
         pointer-events: none;
-        transition: all .5s;
+        transition: all 0.5s;
       }
     }
-    .slider-item:hover .slider-item-text{
+    .slider-item:hover .slider-item-text {
       background-color: $colorWhite;
-      transition: all .5s;
-      .btn{
+      transition: all 0.5s;
+      .btn {
         opacity: 1;
-        transition: .5s;
+        transition: 0.5s;
         pointer-events: all;
       }
     }
@@ -760,7 +762,7 @@ a {
     h3 {
       font-size: 20px;
       line-height: 38px;
-      color: #FEBA03;
+      color: #feba03;
       text-transform: uppercase;
       margin-bottom: 20px;
     }
@@ -811,6 +813,13 @@ a {
   }
 }
 /*end sectionservices*/
+
+.fancybox-slide {
+  max-width  : 50%;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* begin sectionCredit*/
 .credit {
   margin-bottom: 70px;
@@ -845,7 +854,7 @@ a {
       h4 {
         font-size: 24px;
         line-height: 31px;
-        color: #1C0B05;
+        color: #1c0b05;
         margin-bottom: 20px;
       }
 
@@ -903,7 +912,7 @@ a {
 /*end sectionCompany*/
 /* begin sectionClient*/
 .client {
-  background: #F8FAFC;
+  background: #f8fafc;
   position: relative;
   min-height: 750px;
 
@@ -933,7 +942,7 @@ a {
     }
 
     .slick-dots li button {
-      background: #BFBBBA;
+      background: #bfbbba;
       opacity: 0.5;
     }
 
@@ -942,8 +951,6 @@ a {
       opacity: 1;
     }
   }
-
-
 
   .slider-client {
     height: 693px;
@@ -989,7 +996,7 @@ a {
     width: 662px;
     display: inline-block;
     padding-left: 30px;
-    svg{
+    svg {
       cursor: pointer;
     }
     svg.active {
@@ -1014,10 +1021,11 @@ a {
 /* end client section */
 /* begin footer styles*/
 .footer {
-  margin-left: 10.417%;
-  width: 1700px;
   position: relative;
+
   &-content {
+    margin-left: 10.417%;
+    width: 1700px;
     padding: 70px 110px;
     display: flex;
     margin-right: 0;
@@ -1025,7 +1033,7 @@ a {
 
   .item {
     margin-right: 55px;
-    .item-tittle{
+    .item-tittle {
       margin-bottom: 25px;
     }
     h3 {
@@ -1052,12 +1060,12 @@ a {
       font-size: 16px;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #E04A38;
-      transition: color .5s;
+      color: #e04a38;
+      transition: color 0.5s;
     }
-    a:hover{
+    a:hover {
       color: $colorBlack;
-      transition: color .5s;
+      transition: color 0.5s;
     }
 
     .menu-item {
@@ -1103,9 +1111,11 @@ a {
   }
 
   &-copyright {
+    margin-left: 10.417%;
+    width: 1700px;
     display: flex;
     padding: 37px 110px;
-    background: #F8FAFC;
+    background: #f8fafc;
     justify-content: space-between;
 
     &-element {
