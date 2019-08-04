@@ -1393,7 +1393,7 @@
 
 			.menu-opacity-block {
 				display: none;
-				min-height: 400px;
+				height: 53vh;
 				position: relative;
 			}
 			.menu-open-btn{
@@ -1402,7 +1402,7 @@
 
 			&-list {
 				text-align: center;
-				min-height: 300px;
+				height: 300px;
 				margin-bottom: 20px;
 				display: flex;
 				flex-direction: column;
@@ -1439,63 +1439,18 @@
 					
 				}
 			}
-			.menu-list-item-open{
-				padding-bottom: 0;
+			.menu1-services{
+				width: auto;
+				margin-left: 0;
+				top: 195px;
+				height: 247px;
+				left: 50%;
+				transform: translateX(-50%);
+				overflow-y: scroll;
 			}
-			.menu1-services-mobile{
-				display: none;
-				position: relative;
-				width: 100vw;
-				height: 70vh;
-				left: -15px;
-				z-index: 5;
-				overflow: scroll;
-				background: #000;
-				
-				&-content {
-				  position: relative;
-				  display: flex;
-				  justify-content: space-between;
-				}
-		  
-				.menu1-content-close {
-				  position: absolute;
-				  font-size: 18px;
-				  line-height: 30px;
-				  text-align: right;
-				  text-transform: uppercase;
-				  color: #6a6a6a;
-				  top: 40px;
-				  right: 40px;
-				  cursor: pointer;
-				}
-		  
-				.menu1-content-block {
-				  width: 320px;
-				  display: inline-block;
-				  vertical-align: top;
-				  margin-right: auto;
-				}
-		  
-				.menu1-content-block-p h3 {
-				  font-size: 15px;
-				  line-height: 20px;
-				  color: #feba03;
-				  text-transform: uppercase;
-				  margin: 0;
-				}
-		  
-				.menu1-block-list {
-				  padding: 0;
-				  list-style-type: none;
-				  margin: 0 0 74px;
-				}
-		  
-				.menu1-block-list-item {
-				  color: #fff;
-				  font-size: 14px;
-				  line-height: 20px;
-				}
+			.menu1-services-content{
+				padding-top: 40px;
+				padding-left: 5%;
 			}
 		}
 	}

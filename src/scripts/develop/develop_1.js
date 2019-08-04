@@ -29,7 +29,6 @@ function openCloseServicesWindow() {
       let wServices;
       let parentIndex;
         parentIndex = menuList.index(parent);
-        if($(window).innerWidth()>992){
           wServices = $(`.menu${parentIndex}-services`);
         if (wServices.length) {
           wServices.fadeIn();
@@ -39,11 +38,6 @@ function openCloseServicesWindow() {
             wServices.fadeOut();
             parent.removeClass('menu-list-item-open');
           });
-        }
-        }else{
-          wServices = $(`.menu${parentIndex}-services-mobile`);
-          let list = $('.menu-list-item a');
-          
         }
         
     });
