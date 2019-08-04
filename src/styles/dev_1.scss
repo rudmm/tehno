@@ -32,7 +32,6 @@ a {
 /*begin header*/
 .header {
   display: inline;
-
   .menu {
     width: 200px;
     height: 100vh;
@@ -181,6 +180,9 @@ a {
       }
     }
     .menu-opent-btn {
+      display: none;
+    }
+    &1-services-mobile{
       display: none;
     }
     &1-services {
@@ -382,6 +384,7 @@ a {
       &-img {
         width: 100%;
         height: 100%;
+        filter: brightness(.4);
       }
     }
   }

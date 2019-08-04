@@ -29,7 +29,11 @@ function openCloseServicesWindow() {
     let wServices;
     let parentIndex;
       parentIndex = menuList.index(parent);
-      wServices = $(`.menu${parentIndex}-services`);
+      if($(window).innerWidth()>992){
+        wServices = $(`.menu${parentIndex}-services`);
+      }else{
+        wServices = $(`.menu${parentIndex}-services-mobile`);
+      }
       if (wServices.length) {
         wServices.fadeIn();
         parent.addClass('menu-list-item-open');
