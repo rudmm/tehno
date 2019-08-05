@@ -1,9 +1,6 @@
 @media screen and (max-width: 1920px) {
 	.header {
 		.menu {
-			&-contacts {
-				top: 430px;
-			}
 
 			&1-services {
 				height: 100vh;
@@ -44,11 +41,8 @@
 		}
 
 		.menu-contacts {
-			top: auto;
-			position: absolute;
-			bottom: 60px;
-			left: 30px;
 			margin-left: 0;
+			left: 30px;
 		}
 
 		.menu-list-item {
@@ -76,6 +70,7 @@
 		}
 	}
 	/*end header*/
+
 	/* section styles*/
 	section {
 		margin-left: 10.417%;
@@ -86,16 +81,6 @@
 		width: 195px;
 		height: 50px;
 		padding: 15px;
-	}
-	/*form error styles*/
-
-	#contact_name-error{
-		right: 530px;
-		width: 100%;
-	}
-	#contact_tel-error{
-		right: 160px;
-		width: 100%;
 	}
 	/*begin top section */
 	.top {
@@ -151,6 +136,7 @@
 		.form-text span{
 			font-size: 16px;
 			line-height: 20px;
+			margin-top: 25px;
 		}
 	}
 	/*end top section styles*/
@@ -449,15 +435,6 @@
 	}
 	/*end btn styles*/
 	/* styles error form*/
-	#contact_name-error {
-		font-size: 14px;
-		right: 545px;
-	}
-
-	#contact_tel-error {
-		font-size: 14px;
-		right: 190px;
-	}
 	/* begin styles top section*/
 	.top {
 		&-menu {
@@ -519,7 +496,6 @@
 
 		&-form .form-text span {
 			font-size: 15px;
-			margin-top: 17px;
 		}
 	}
 	/* end section top styles*/
@@ -796,9 +772,6 @@
 				height: 10px;
 			}
 		}
-		.menu-contacts{
-			bottom: 100px;
-		}
 		.menu .menu-contacts-tel a{
 			margin-bottom: 15px;
 		}
@@ -822,18 +795,18 @@
 	}
 	/*end header styles*/
 
+	/*begin form error styles*/
+
+	.form_input{
+		.errorText{
+			font-size: 14px;
+		}
+	}
+
 	/*btn styles*/
 	.btn{
 		width: 175px;
 		height: 45px;
-	}
-	/*error form style*/
-
-	#contact_name-error{
-		right: 480px;
-	}
-	#contact_tel-error{
-		right: 150px;
 	}
 	/*begin top section*/
 	.top {
@@ -892,6 +865,7 @@
 		&-block {
 			width: 400px;
 			height: 80px;
+			margin-right: 15px;
 		}
 
 		&-block-pic {
@@ -1000,7 +974,6 @@
 
 		.menu-contacts {
 			left: 15px;
-			bottom: 240px;
 		}
 
 		.menu .menu-contacts-tel {
@@ -1066,14 +1039,6 @@
 		svg {
 			width: 7px;
 		}
-	}
-	/*begin error form styles*/
-	#contact_tel-error {
-		right: 150px;
-	}
-
-	#contact_name-error {
-		right: 480px;
 	}
 	/*begin top section*/
 	.top {
@@ -1426,8 +1391,6 @@
 				bottom: 20px;
 				justify-content: space-between;
 				width: 100vw;
-				
-
 				.menu-contacts-tel {
 					font-size: 17px;
 					line-height: 19px;
@@ -1551,8 +1514,12 @@
 	/*begin number section*/
 
 	.number{
+		.number-content{
+			justify-content: flex-start;
+			margin-left: 45px;
+		}
 		.number-block{
-			width: 455px;
+			width: 430px;
 		}
 	}
 
@@ -1570,8 +1537,8 @@
 	/*end services section*/
 	.credit{
 		.item{
-			margin-left: 50px;
-			margin-right: 50px;
+			margin-left: 45px;
+			margin-right: 45px;
 		}
 	}
 	/*begin client section*/
@@ -1814,13 +1781,13 @@
 	}
 
 	/*error form style*/
+	.form_input{
+		.errorText{
+			font-size: 12px;
+		}
+	}
 
-	#contact_name-error{
-		right: 318px;
-	}
-	#contact_tel-error{
-		right: 40px;
-	}
+	/*begin top section*/
 	.top{
 		.top-slider-slick{
 			.item{
@@ -1845,7 +1812,7 @@
 			}
 			.form-text span{
 				font-size: 12px;
-				margin-top: 12px;
+				margin-top: 15px;
 				max-width: 90vw;
 			}
 		}
@@ -1906,17 +1873,6 @@
 
 	/*end header styles*/
 
-	#contact_name-error, #contact_tel-error{
-		right: 0px;
-		height: 0;	
-	}
-	#contact_name-error{
-		top: 115px;
-	}
-	#contact_tel-error{
-		top: 175px;
-	}
-
 	/*slick btn styles*/
 	.global-wrapper .slick-arrow,
 	.slick-arrow {
@@ -1950,10 +1906,15 @@
 			flex-direction: column;
 		}
 		.top-form{
+			max-width: 100%;
+			.contact-form-tittle{
+				h1,h2,h3,h4,h5{
+					max-width: 100%;
+				}
+			}
 			.contact-form-row{
 				flex-direction: column;
-				width: 190px;
-				margin-left: auto;
+				max-width: 190px;
 			}
 			.form-input{
 				display: inline-block;

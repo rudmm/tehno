@@ -32,7 +32,7 @@ function openCloseServicesWindow() {
           wServices = $(`.menu${parentIndex}-services`);
         if (wServices.length) {
           parent.addClass('menu-list-item-open');
-          if($(window).innerWidth>992){
+          if($(window).innerWidth()>992){
             wServices.fadeIn();
           }else{
             wServices.slideToggle();
@@ -41,7 +41,7 @@ function openCloseServicesWindow() {
           }
           let close = $(`.menu${parentIndex}-content-close`);
           close.click(function() {
-            if($(window).innerWidth>992){
+            if($(window).innerWidth()>992){
               wServices.fadeOut();
             }else{
               wServices.slideUp();
@@ -62,7 +62,7 @@ function sectionServicesSlider() {
     appendDots: $('.services-dots'),
     prevArrow: $('.services-prev'),
     nextArrow: $('.services-next'),
-    //autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000,
     swipe: false,
     responsive: [
@@ -100,7 +100,7 @@ function sectionClientSlider() {
     prevArrow: $('.client-prev'),
     nextArrow: $('.client-next'),
     swipe: false,
-    //autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000
 
   });
@@ -174,7 +174,12 @@ function closeListItem(list){
 
 function fancyBoxText(){
   let btnCredit = $('.credit .btn').fancybox({
-
+    afterClose: function(){
+      $('#p1').show();
+      $('#p2').show();
+      $('#p3').show();
+      $('#p4').show();
+    }
   });
 }
 function clickBtnOpenMenu(){
@@ -186,6 +191,21 @@ function clickBtnOpenMenu(){
     opacity.slideToggle();
     menuClose.click();
   });
+}
+function showImageCredit(){
+  let img = $('.credit .item-img');
+  let seccredit = $('.credit').offset().top;
+  let scroll = $(window).scrollTop();
+  let scrollBottom = scroll+$(window).height();
+  for(let i=0;i<img.length;i++){
+    let position = img.eq(i).offset().top+img.height(); 
+    if(scrollBottom>position && position>scroll){
+      img.eq(i).addClass('active');
+    }else{
+      img.eq(i).removeClass('active');
+    }
+    
+  }
 }
 $(document).ready(function() {
   topSectionSlider();
@@ -203,4 +223,5 @@ $(window).resize(function() {
 });
 $(window).scroll(function() {
   animateSectionNumber();
+  showImageCredit();
 });
