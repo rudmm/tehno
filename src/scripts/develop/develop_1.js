@@ -2,11 +2,11 @@ function topSectionSlider() {
   let clinetWidth = $(window).innerWidth();
   let dots;
   if(clinetWidth<992){
-    dots = $('.top-slider-dots-mobile');
+    dots = $('.topsection-slider-dots-mobile');
   }else{
-    dots = $('.top-menu-dots');
+    dots = $('.topsection-menu-dots');
   }
-  $('.top-slider-slick').slick({
+  $('.topsection-slider-slick').slick({
     Infinity: true,
     dots: true,
     fade: true,
