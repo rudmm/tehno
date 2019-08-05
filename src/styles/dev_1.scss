@@ -46,6 +46,11 @@ a {
     font-size: 15px;
   }
 }
+  .hidden-block{
+    #company-text{
+      display: none;
+    }
+  } 
 
 
 
@@ -148,6 +153,8 @@ a {
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
+
+
 /*begin header*/
 .header {
   display: inline;
@@ -242,6 +249,7 @@ a {
         padding-left: 40px;
         padding-bottom: 20px;
         padding-top: 20px;
+        position: relative;
 
         a {
           font-size: 20px;
@@ -304,13 +312,13 @@ a {
     &1-services-mobile{
       display: none;
     }
-    &1-services {
+    &-services {
       width: 768px;
       height: 1080px;
       background: $colorBlack;
-      position: fixed;
-      top: 0;
-      margin-left: 200px;
+      position: absolute;
+      top: -360%;
+      left: 100%;
       display: none;
 
       &-content {
@@ -321,7 +329,7 @@ a {
         justify-content: space-between;
       }
 
-      .menu1-content-close {
+      .menu-content-close {
         position: absolute;
         font-size: 18px;
         line-height: 30px;
@@ -333,14 +341,14 @@ a {
         cursor: pointer;
       }
 
-      .menu1-content-block {
+      .menu-content-block {
         width: 320px;
         display: inline-block;
         vertical-align: top;
         margin-right: auto;
       }
 
-      .menu1-content-block-p h3 {
+      .menu-content-block-p h3 {
         font-size: 20px;
         line-height: 38px;
         color: #feba03;
@@ -348,13 +356,13 @@ a {
         margin: 0;
       }
 
-      .menu1-block-list {
+      .menu-block-list {
         padding: 0;
         list-style-type: none;
         margin: 0 0 74px;
       }
 
-      .menu1-block-list-item {
+      .menu-block-list-item {
         color: #fff;
         font-size: 15px;
         line-height: 30px;
@@ -818,11 +826,7 @@ a {
 }
 /*end sectionservices*/
 
-.fancybox-slide {
-  max-width  : 50%;
-  margin: 0 auto;
-  left: 25%;
-}
+
 /* begin sectionCredit*/
 .credit {
   margin-bottom: 70px;
@@ -875,14 +879,14 @@ a {
       margin-left: 50px;
       margin-top: 60px;
 
-      h4 {
+      .item-tittle > * {
         font-size: 24px;
         line-height: 31px;
         color: #1c0b05;
         margin-bottom: 20px;
       }
 
-      p {
+      .item-info > * {
         font-size: 16px;
         line-height: 31px;
         font-weight: 700;
@@ -890,6 +894,14 @@ a {
         margin-bottom: 50px;
         max-height: 186px;
         overflow: hidden;
+        text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+      }
+      .item-info-hidden{
+        display: none;
       }
     }
   }

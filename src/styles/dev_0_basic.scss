@@ -8,9 +8,11 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 /* helping adds*/
 .clear{clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;}
 .cfix:after{content: '';display: block;height: 0;font-size: 1px;line-height: 1px;overflow: hidden;clear: both;}
-.hidden-block{position:absolute;left:-99999em;top:-99999em;}
+.hidden-block{position:absolute;left:-99999em;top:-99999em;#company-text{display: none}}
 
 /* /helping adds*/
+
+
 
 /* wraps styling*/
 

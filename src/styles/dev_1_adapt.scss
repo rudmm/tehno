@@ -2,7 +2,7 @@
 	.header {
 		.menu {
 
-			&1-services {
+			&-services {
 				height: 100vh;
 			}
 
@@ -49,21 +49,20 @@
 			padding-left: 30px;
 		}
 
-		.menu1-services {
+		.menu-services {
 			height: 891px;
-			margin-left: 10.417%;
-			width: 40%;
+			max-width: 40vw;
 
-			.menu1-content-block {
+			.menu-content-block {
 				width: 41.66667%;
 			}
 
-			.menu1-content-block-p h3 {
+			.menu-content-block-p h3 {
 				font-size: 16px;
 				line-height: 22px;
 			}
 
-			.menu1-block-list-item {
+			.menu-block-list-item {
 				font-size: 13px;
 				line-height: 26px;
 			}
@@ -234,12 +233,12 @@
 			margin-left: 40px;
 		}
 
-		.item-text h4 {
+		.item-text .item-tittle > * {
 			font-size: 23px;
 			line-height: 26px;
 		}
 
-		.item-text p {
+		.item-text .item-info > * {
 			font-size: 15px;
 			line-height: 26px;
 			margin-top: 25px;
@@ -403,20 +402,21 @@
 			}
 		}
 
-		.menu1-services {
+		.menu-services {
 			height: 768px;
+			top: -272%;
 
-			.menu1-content-block-p svg {
+			.menu-content-block-p svg {
 				height: 12px;
 			}
 
-			.menu1-content-block{
+			.menu-content-block{
 				margin-right: 20px;
 				width: auto;
 			}
 		}
 
-		.menu1-services-content {
+		.menu-services-content {
 			padding-top: 120px;
 			padding-left: 7%;
 			display: flex;
@@ -594,7 +594,7 @@
 			margin-right: 35px;
 		}
 
-		.item-text h4 {
+		.item-text .item-tittle > * {
 			font-size: 22px;
 			line-height: 24px;
 			margin-bottom: 5px;
@@ -604,7 +604,7 @@
 			width: 80px;
 		}
 
-		.item-text p {
+		.item-text .item-info > * {
 			line-height: 21px;
 			height: 120px;
 			min-height: 20px;
@@ -776,18 +776,19 @@
 			margin-bottom: 15px;
 		}
 
-		.menu1-services {
+		.menu-services {
 			height: 720px;
+			top: -224%;
 		}
 
-		.menu1-services-content {
+		.menu-services-content {
 			padding-top: 90px;
 
-			.menu1-content-close {
+			.menu-content-close {
 				font-size: 17px;
 			}
 
-			.menu1-content-block-p h3 {
+			.menu-content-block-p h3 {
 				font-size: 13px;
 				line-height: 15px;
 			}
@@ -1016,28 +1017,29 @@
 			line-height: 12px;
 		}
 
-		.menu1-services {
+		.menu-services {
 			height: 576px;
-			width: 45%;
+			width: 45vw;
+			top: -241%;
 		}
 
-		.menu1-services-content {
+		.menu-services-content {
 			padding-top: 60px;
 			padding-left: 30px;
 
-			.menu1-content-close {
+			.menu-content-close {
 				top: 15px;
 				right: 25px;
 				font-size: 14px;
 				line-height: 20px;
 			}
-			.menu1-content-block{
+			.menu-content-block{
 				margin-right: 1%;
 			}
-			.menu1-block-list-item{
+			.menu-block-list-item{
 				line-height: 16px;
 			}
-			.menu1-content-block-p svg {
+			.menu-content-block-p svg {
 				height: 8px;
 			}
 		}
@@ -1208,6 +1210,9 @@
 			margin-left: 60px;
 			margin-right: 70px;
 		}
+		.item-img img{
+			opacity: 1;
+		}
 
 		.item-text {
 			margin-top: 30px;
@@ -1218,7 +1223,7 @@
 			margin-right: 30px;
 		}
 
-		.item-text h4 {
+		.item-text .item-tittle > * {
 			margin-bottom: 0;
 			font-size: 20px;
 			line-height: 21px;
@@ -1228,7 +1233,7 @@
 			width: 70px;
 		}
 
-		.item-text p {
+		.item-text .item-info > * {
 			font-size: 14px;
 			line-height: 20px;
 			margin-top: 0;
@@ -1389,7 +1394,8 @@
 
 			.menu-opacity-block {
 				display: none;
-				height: 53vh;
+				min-height: 53vh;
+				height: auto;
 				position: relative;
 			}
 			.menu-open-btn{
@@ -1398,12 +1404,17 @@
 
 			&-list {
 				text-align: center;
-				height: 300px;
+				min-height: 300px;
 				margin-bottom: 20px;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 				padding: 50px 0;
+			}
+			.menu-list-item{
+				padding-left: 0;
+				padding-right: 0;
+				padding-bottom: 0;
 			}
 
 			&-list-item a {
@@ -1421,6 +1432,7 @@
 				bottom: 20px;
 				justify-content: space-between;
 				width: 100vw;
+				position: relative;
 				.menu-contacts-tel {
 					font-size: 17px;
 					line-height: 19px;
@@ -1433,29 +1445,35 @@
 					
 				}
 			}
-			.menu1-services{
-				width: 100vw;
+			.menu-services{
+				width: 100%;
+				max-width: 100%;
 				margin-left: 0;
-				top: 195px;
-				height: 247px;
+				top: 0;
+				left: 0;
+				height: 50vh;
 				overflow-y: scroll;
+				position: relative;
 			}
-			.menu1-services-content{
+			.menu-services-content{
 				padding-top: 40px;
 				padding-left: 5%;
-				.menu1-content-close{
+				.menu-content-close{
 					font-size: 16px;
 				}
-				.menu1-content-block{
+				.menu-content-block{
 					width: 50%;
-					.menu1-content-block-p h3{
+					.menu-content-block-p{
+						text-align: left;
+					}
+					.menu-content-block-p h3{
 						font-size: 20px;
 						margin-bottom: 10px;
 					}
-					.menu1-content-block-p li{
+					.menu-content-block-p li{
 						font-size: 17px;
 					}
-					.menu1-content-block-p svg{
+					.menu-content-block-p svg{
 						height: 20px;
 					}
 				}
@@ -1656,12 +1674,14 @@
 			.menu-list-item a{
 				font-size: 30px;
 			}
-			.menu1-services{
-				top: 336px;
+			.menu-services{
 				width: 100%;
 			}
-			.menu1-content-block{
+			.menu-content-block{
 				width: 50%;
+			}
+			.menu-contacts{
+				bottom: -100px;
 			}
 		}
 		
@@ -1747,10 +1767,10 @@
 		}
 		.item-text{
 			margin-left :0;
-			h4{
+			.item-tittle > *{
 				font-size: 24px;
 			}
-			p{
+			.item-info > *{
 				font-size: 19px;
 			}
 			
@@ -1818,11 +1838,14 @@
 @media screen and (max-width: 666px) {
 	.header{
 		.menu{
-			.menu1-services{
-				top: 252px;
+			.menu-services{
 				width: 100vw;
 				left: 0;
 				transform: translate(0);
+				height: 42vh;
+			}
+			.menu-contacts{
+				bottom: -40px;
 			}
 		}
 	}
@@ -1879,10 +1902,10 @@
 
 	.credit{
 		.item .item-text{
-			h4{
+			.item-tittle > *{
 				font-size: 21px;
 			}
-			p{
+			.item-info > *{
 				font-size: 15px;
 			}
 			.btn{
@@ -1915,8 +1938,8 @@
 			margin-top: 12px;
 			margin-bottom: 12px;
 		}
-		.menu .menu1-services{
-			.menu1-content-block .menu1-content-block-p{
+		.menu .menu-services{
+			.menu-content-block .menu-content-block-p{
 				h3{
 					font-size: 14px;
 				}
@@ -1975,6 +1998,7 @@
 	/*begin top section styles*/
 
 	.topsection{
+		margin-top: 54px;
 		.topsection-list{
 			display: flex;
 			flex-direction: column;
@@ -2138,14 +2162,11 @@
 				font-size: 13px;
 				line-height: 15px;
 			}
-			.menu1-services{
-				top: 22.5%;
-			}
-			.menu1-services-content{
+			.menu-services-content{
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
-				.menu1-content-block{
+				.menu-content-block{
 					flex-basis: 80%;
 				}
 			}
@@ -2155,6 +2176,7 @@
 	/*top section style*/
 
 	.topsection{
+		margin-top: 50px;
 		.topsection-form{
 			.contact-form-tittle h1 {
 				font-size: 22px;
@@ -2237,7 +2259,7 @@
 			margin-bottom: 60px;
 		}
 		.item .item-text{
-			h4{
+			.item-tittle > *{
 				font-size: 19px;
 			}	
 		}
